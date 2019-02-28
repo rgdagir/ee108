@@ -1,0 +1,4 @@
+verilog work "ff_lib.v"
+verilog work "wave_capture.v"
+verilog work "fake_sample_ram.v"
+verilog work "wave_capture_tb.v"

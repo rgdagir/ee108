@@ -1,0 +1,4 @@
+verilog work "ff_lib.v"
+verilog work "master_fsm.v"
+verilog work "master_fsm_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

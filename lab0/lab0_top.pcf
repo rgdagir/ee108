@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jan 16 19:30:56 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "left_pushbutton" LOCATE = SITE "N15" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "F22" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "G22" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "H22" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "F21" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "H19" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "B<2>" LOCATE = SITE "H17" LEVEL 1;
+COMP "B<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "right_pushbutton" LOCATE = SITE "R18" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "T22" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "T21" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "U21" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,4 @@
+verilog work "encoder.v"
+verilog work "cam.v"
+verilog work "cam_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

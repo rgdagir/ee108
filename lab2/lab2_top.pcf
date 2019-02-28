@@ -1,0 +1,274 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jan 30 17:56:29 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "btn_right" LOCATE = SITE "R18" LEVEL 1;
+COMP "btn_up" LOCATE = SITE "T18" LEVEL 1;
+COMP "hdmi_de" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk_100" LOCATE = SITE "Y9" LEVEL 1;
+COMP "btn_down" LOCATE = SITE "R16" LEVEL 1;
+COMP "hdmi_sda" LOCATE = SITE "Y16" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "F22" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "G22" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "H22" LEVEL 1;
+COMP "hdmi_scl" LOCATE = SITE "AA18" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "F21" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "H19" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "H17" LEVEL 1;
+COMP "sw<8>" LOCATE = SITE "M15" LEVEL 1;
+COMP "hdmi_d<10>" LOCATE = SITE "W13" LEVEL 1;
+COMP "hdmi_d<14>" LOCATE = SITE "V14" LEVEL 1;
+COMP "hdmi_d<13>" LOCATE = SITE "U17" LEVEL 1;
+COMP "hdmi_d<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "hdmi_d<11>" LOCATE = SITE "W15" LEVEL 1;
+COMP "hdmi_d<15>" LOCATE = SITE "V13" LEVEL 1;
+COMP "hdmi_d<8>" LOCATE = SITE "AA17" LEVEL 1;
+COMP "hdmi_d<7>" LOCATE = SITE "AB17" LEVEL 1;
+COMP "hdmi_d<6>" LOCATE = SITE "AA16" LEVEL 1;
+COMP "hdmi_d<5>" LOCATE = SITE "AB16" LEVEL 1;
+COMP "hdmi_d<9>" LOCATE = SITE "Y15" LEVEL 1;
+COMP "hdmi_d<0>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "U21" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "T21" LEVEL 1;
+COMP "hdmi_d<4>" LOCATE = SITE "AB15" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "T22" LEVEL 1;
+COMP "hdmi_d<3>" LOCATE = SITE "Y14" LEVEL 1;
+COMP "hdmi_d<2>" LOCATE = SITE "AA14" LEVEL 1;
+COMP "hdmi_d<1>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "btn_left" LOCATE = SITE "N15" LEVEL 1;
+COMP "hdmi_clock" LOCATE = SITE "W18" LEVEL 1;
+COMP "hdmi_vsync" LOCATE = SITE "W17" LEVEL 1;
+COMP "hdmi_hsync" LOCATE = SITE "V17" LEVEL 1;
+COMP "hdmi_int" LOCATE = SITE "W16" LEVEL 1;
+PIN Mmult_n0070_pins<147> = BEL "Mmult_n0070" PINNAME CLK;
+PIN Maddsub_PWR_1_o_g[7]_MuLt_18_OUT_pins<117> = BEL
+        "Maddsub_PWR_1_o_g[7]_MuLt_18_OUT" PINNAME CLK;
+PIN Maddsub_PWR_1_o_r[7]_MuLt_20_OUT_pins<117> = BEL
+        "Maddsub_PWR_1_o_r[7]_MuLt_20_OUT" PINNAME CLK;
+PIN Maddsub_PWR_1_o_b[7]_MuLt_11_OUT_pins<117> = BEL
+        "Maddsub_PWR_1_o_b[7]_MuLt_11_OUT" PINNAME CLK;
+PIN Maddsub_PWR_1_o_r[7]_MuLt_14_OUT_pins<117> = BEL
+        "Maddsub_PWR_1_o_r[7]_MuLt_14_OUT" PINNAME CLK;
+PIN Maddsub_PWR_1_o_b[7]_MuLt_5_OUT_pins<117> = BEL
+        "Maddsub_PWR_1_o_b[7]_MuLt_5_OUT" PINNAME CLK;
+PIN Madd_n0054_Madd1_pins<117> = BEL "Madd_n0054_Madd1" PINNAME CLK;
+PIN Madd_n0053_Madd1_pins<117> = BEL "Madd_n0053_Madd1" PINNAME CLK;
+PIN fpa_vga_tcgrom/Mram_data_pins<32> = BEL "fpa_vga_tcgrom/Mram_data" PINNAME
+        CLKARDCLK;
+PIN hdmi/PLLE2_BASE_inst_pins<2> = BEL "hdmi/PLLE2_BASE_inst" PINNAME CLKIN1;
+TIMEGRP clk_100 = BEL "result_reg/q_0" BEL "result_reg/q_1" BEL
+        "result_reg/q_2" BEL "result_reg/q_3" BEL "result_reg/q_4" BEL
+        "result_reg/q_5" BEL "result_reg/q_6" BEL "result_reg/q_7" BEL
+        "converted_0" BEL "converted_1" BEL "converted_2" BEL "converted_3"
+        BEL "converted_4" BEL "converted_5" BEL "converted_6" BEL
+        "converted_7" BEL "converted_8" BEL "converted_9" BEL "converted_10"
+        BEL "converted_11" BEL "converted_12" BEL "converted_13" BEL
+        "converted_14" BEL "converted_15" BEL "converted_21" BEL
+        "converted_22" BEL "converted_23" BEL "bin_reg/q_7" BEL "bin_reg/q_6"
+        BEL "bin_reg/q_5" BEL "bin_reg/q_4" BEL "bin_reg/q_3" BEL
+        "bin_reg/q_2" BEL "bin_reg/q_1" BEL "bin_reg/q_0" BEL "ain_reg/q_7"
+        BEL "ain_reg/q_6" BEL "ain_reg/q_5" BEL "ain_reg/q_4" BEL
+        "ain_reg/q_3" BEL "ain_reg/q_2" BEL "ain_reg/q_1" BEL "ain_reg/q_0"
+        BEL "rgb_dff/q_5" BEL "rgb_dff/q_4" BEL "rgb_dff/q_3" BEL
+        "rgb_dff/q_2" PIN "Mmult_n0070_pins<147>" PIN
+        "Maddsub_PWR_1_o_g[7]_MuLt_18_OUT_pins<117>" PIN
+        "Maddsub_PWR_1_o_r[7]_MuLt_20_OUT_pins<117>" PIN
+        "Maddsub_PWR_1_o_b[7]_MuLt_11_OUT_pins<117>" PIN
+        "Maddsub_PWR_1_o_r[7]_MuLt_14_OUT_pins<117>" PIN
+        "Maddsub_PWR_1_o_b[7]_MuLt_5_OUT_pins<117>" BEL "led_div/q_0" BEL
+        "led_div/q_1" BEL "led_div/q_2" BEL "led_div/q_3" BEL "led_div/q_4"
+        BEL "led_div/q_5" BEL "led_div/q_6" BEL "led_div/q_7" BEL
+        "led_div/q_8" BEL "led_div/q_9" BEL "led_div/q_10" BEL "led_div/q_11"
+        BEL "led_div/q_12" BEL "led_div/q_13" BEL "led_div/q_14" BEL
+        "led_div/q_15" BEL "led_div/q_16" BEL "led_div/q_17" BEL
+        "led_div/q_18" BEL "led_div/q_19" BEL "led_div/q_20" BEL
+        "led_div/q_21" BEL "led_div/q_22" BEL "led_div/q_23" BEL
+        "led_div/q_24" BEL "led_div/q_25" BEL "led_div/q_26" PIN
+        "Madd_n0054_Madd1_pins<117>" PIN "Madd_n0053_Madd1_pins<117>" BEL
+        "ye_dff/q_17" BEL "ye_dff/q_16" BEL "ye_dff/q_15" BEL "y_dff/q_9" BEL
+        "y_dff/q_8" BEL "y_dff/q_7" BEL "y_dff/q_6" BEL "y_dff/q_5" BEL
+        "y_dff/q_4" BEL "y_dff/q_3" BEL "y_dff/q_2" BEL "y_dff/q_1" BEL
+        "y_dff/q_0" BEL "x_dff/q_10" BEL "x_dff/q_9" BEL "x_dff/q_8" BEL
+        "x_dff/q_7" BEL "x_dff/q_6" BEL "x_dff/q_5" BEL "x_dff/q_4" BEL
+        "x_dff/q_3" BEL "x_dff/q_2" BEL "x_dff/q_1" BEL "x_dff/q_0" BEL
+        "fpa_vga/char_selection_reg/q_0" BEL "fpa_vga/char_selection_reg/q_1"
+        BEL "fpa_vga/char_selection_reg/q_2" BEL
+        "fpa_vga/char_selection_reg/q_3" BEL "fpa_vga/char_selection_reg/q_4"
+        BEL "fpa_vga/char_selection_reg/q_5" BEL "fpa_vga/char_color_reg/q_0"
+        BEL "fpa_vga/char_color_reg/q_1" BEL "fpa_vga/char_color_reg/q_2" BEL
+        "fpa_vga/char_color_reg/q_3" BEL "fpa_vga/char_color_reg/q_4" BEL
+        "fpa_vga/char_color_reg/q_5" BEL "fpa_vga/char_color_2_reg/q_0" BEL
+        "fpa_vga/char_color_2_reg/q_1" BEL "fpa_vga/char_color_2_reg/q_2" BEL
+        "fpa_vga/char_color_2_reg/q_3" BEL "fpa_vga/char_color_2_reg/q_4" BEL
+        "fpa_vga/char_color_2_reg/q_5" BEL "clk_100_IBUF_BUFG" BEL
+        "Mshreg_converted_18" BEL "converted_18" BEL "Mshreg_converted_16" BEL
+        "converted_16" BEL "Mshreg_converted_17" BEL "converted_17" BEL
+        "Mshreg_converted_19" BEL "converted_19" BEL "Mshreg_converted_20" BEL
+        "converted_20" PIN "fpa_vga_tcgrom/Mram_data_pins<32>" PIN
+        "hdmi/PLLE2_BASE_inst_pins<2>";
+TIMEGRP hdmi_clk_vgax2 = BEL "hdmi/ODDR_inst" BEL "hdmi/vcounter_10" BEL
+        "hdmi/vcounter_9" BEL "hdmi/vcounter_8" BEL "hdmi/vcounter_7" BEL
+        "hdmi/vcounter_6" BEL "hdmi/vcounter_5" BEL "hdmi/vcounter_4" BEL
+        "hdmi/vcounter_3" BEL "hdmi/vcounter_2" BEL "hdmi/vcounter_1" BEL
+        "hdmi/vcounter_0" BEL "hdmi/hcounter_10" BEL "hdmi/hcounter_9" BEL
+        "hdmi/hcounter_8" BEL "hdmi/hcounter_7" BEL "hdmi/hcounter_6" BEL
+        "hdmi/hcounter_5" BEL "hdmi/hcounter_4" BEL "hdmi/hcounter_3" BEL
+        "hdmi/hcounter_2" BEL "hdmi/hcounter_1" BEL "hdmi/hcounter_0" BEL
+        "hdmi/hdmi_de" BEL "hdmi/xpos_10" BEL "hdmi/xpos_9" BEL "hdmi/xpos_8"
+        BEL "hdmi/xpos_7" BEL "hdmi/xpos_6" BEL "hdmi/xpos_5" BEL
+        "hdmi/xpos_4" BEL "hdmi/xpos_3" BEL "hdmi/xpos_2" BEL "hdmi/xpos_1"
+        BEL "hdmi/xpos_0" BEL "hdmi/ypos_9" BEL "hdmi/ypos_8" BEL
+        "hdmi/ypos_7" BEL "hdmi/ypos_6" BEL "hdmi/ypos_5" BEL "hdmi/ypos_4"
+        BEL "hdmi/ypos_3" BEL "hdmi/ypos_2" BEL "hdmi/ypos_1" BEL
+        "hdmi/ypos_0" BEL "hdmi/hdmi_d_15" BEL "hdmi/hdmi_d_14" BEL
+        "hdmi/hdmi_d_13" BEL "hdmi/hdmi_d_12" BEL "hdmi/hdmi_d_11" BEL
+        "hdmi/hdmi_d_10" BEL "hdmi/hdmi_d_9" BEL "hdmi/hdmi_d_8" BEL
+        "hdmi/hdmi_vsync" BEL "hdmi/hdmi_hsync" BEL "hdmi/edge" BEL
+        "hdmi/hsync" BEL "hdmi/vsync" BEL "hdmi/blanking";
+TIMEGRP hdmi_clk = BEL "hdmi/Inst_i2c_sender/divider_7" BEL
+        "hdmi/Inst_i2c_sender/divider_6" BEL "hdmi/Inst_i2c_sender/divider_5"
+        BEL "hdmi/Inst_i2c_sender/divider_4" BEL
+        "hdmi/Inst_i2c_sender/divider_3" BEL "hdmi/Inst_i2c_sender/divider_2"
+        BEL "hdmi/Inst_i2c_sender/divider_1" BEL
+        "hdmi/Inst_i2c_sender/divider_0" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_7" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_6" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_5" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_4" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_3" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_2" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_1" BEL
+        "hdmi/Inst_i2c_sender/initial_pause_0" BEL
+        "hdmi/Inst_i2c_sender/address_5" BEL "hdmi/Inst_i2c_sender/address_4"
+        BEL "hdmi/Inst_i2c_sender/address_3" BEL
+        "hdmi/Inst_i2c_sender/address_2" BEL "hdmi/Inst_i2c_sender/address_1"
+        BEL "hdmi/Inst_i2c_sender/address_0" BEL
+        "hdmi/Inst_i2c_sender/data_sr_28" BEL
+        "hdmi/Inst_i2c_sender/data_sr_27" BEL
+        "hdmi/Inst_i2c_sender/data_sr_26" BEL
+        "hdmi/Inst_i2c_sender/data_sr_25" BEL
+        "hdmi/Inst_i2c_sender/data_sr_24" BEL
+        "hdmi/Inst_i2c_sender/data_sr_23" BEL
+        "hdmi/Inst_i2c_sender/data_sr_22" BEL
+        "hdmi/Inst_i2c_sender/data_sr_21" BEL
+        "hdmi/Inst_i2c_sender/data_sr_20" BEL
+        "hdmi/Inst_i2c_sender/data_sr_19" BEL
+        "hdmi/Inst_i2c_sender/data_sr_18" BEL
+        "hdmi/Inst_i2c_sender/data_sr_17" BEL
+        "hdmi/Inst_i2c_sender/data_sr_16" BEL
+        "hdmi/Inst_i2c_sender/data_sr_15" BEL
+        "hdmi/Inst_i2c_sender/data_sr_14" BEL
+        "hdmi/Inst_i2c_sender/data_sr_13" BEL
+        "hdmi/Inst_i2c_sender/data_sr_12" BEL
+        "hdmi/Inst_i2c_sender/data_sr_11" BEL
+        "hdmi/Inst_i2c_sender/data_sr_10" BEL "hdmi/Inst_i2c_sender/data_sr_9"
+        BEL "hdmi/Inst_i2c_sender/data_sr_8" BEL
+        "hdmi/Inst_i2c_sender/data_sr_7" BEL "hdmi/Inst_i2c_sender/data_sr_6"
+        BEL "hdmi/Inst_i2c_sender/data_sr_5" BEL
+        "hdmi/Inst_i2c_sender/data_sr_4" BEL "hdmi/Inst_i2c_sender/data_sr_3"
+        BEL "hdmi/Inst_i2c_sender/data_sr_2" BEL
+        "hdmi/Inst_i2c_sender/data_sr_1" BEL "hdmi/Inst_i2c_sender/data_sr_0"
+        BEL "hdmi/Inst_i2c_sender/reg_value_15" BEL
+        "hdmi/Inst_i2c_sender/reg_value_14" BEL
+        "hdmi/Inst_i2c_sender/reg_value_13" BEL
+        "hdmi/Inst_i2c_sender/reg_value_12" BEL
+        "hdmi/Inst_i2c_sender/reg_value_11" BEL
+        "hdmi/Inst_i2c_sender/reg_value_10" BEL
+        "hdmi/Inst_i2c_sender/reg_value_9" BEL
+        "hdmi/Inst_i2c_sender/reg_value_8" BEL
+        "hdmi/Inst_i2c_sender/reg_value_7" BEL
+        "hdmi/Inst_i2c_sender/reg_value_6" BEL
+        "hdmi/Inst_i2c_sender/reg_value_5" BEL
+        "hdmi/Inst_i2c_sender/reg_value_4" BEL
+        "hdmi/Inst_i2c_sender/reg_value_3" BEL
+        "hdmi/Inst_i2c_sender/reg_value_2" BEL
+        "hdmi/Inst_i2c_sender/reg_value_1" BEL
+        "hdmi/Inst_i2c_sender/reg_value_0" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_28" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_27" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_26" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_25" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_24" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_23" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_22" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_21" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_20" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_19" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_18" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_17" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_16" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_15" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_14" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_13" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_12" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_11" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_10" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_9" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_8" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_7" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_6" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_5" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_4" BEL
+        "hdmi/Inst_i2c_sender/tristate_sr_3" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_28" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_27" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_26" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_25" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_24" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_23" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_22" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_21" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_20" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_19" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_18" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_17" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_16" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_15" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_14" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_13" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_12" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_11" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_10" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_9" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_8" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_7" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_6" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_5" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_4" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_3" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_2" BEL
+        "hdmi/Inst_i2c_sender/clk_first_quarter_1" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_28" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_27" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_26" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_25" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_24" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_23" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_22" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_21" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_20" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_19" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_18" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_17" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_16" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_15" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_14" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_13" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_12" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_11" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_10" BEL "hdmi/Inst_i2c_sender/busy_sr_9"
+        BEL "hdmi/Inst_i2c_sender/busy_sr_8" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_7" BEL "hdmi/Inst_i2c_sender/busy_sr_6"
+        BEL "hdmi/Inst_i2c_sender/busy_sr_5" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_4" BEL "hdmi/Inst_i2c_sender/busy_sr_3"
+        BEL "hdmi/Inst_i2c_sender/busy_sr_2" BEL
+        "hdmi/Inst_i2c_sender/busy_sr_1" BEL "hdmi/Inst_i2c_sender/busy_sr_0"
+        BEL "hdmi/Inst_i2c_sender/finished";
+TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" TS_clk_100 HIGH 50%;
+TS_hdmi_clk_vgax2 = PERIOD TIMEGRP "hdmi_clk_vgax2" TS_clk_100 / 1.8 HIGH 50%;
+SCHEMATIC END;
+

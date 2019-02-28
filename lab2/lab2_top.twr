@@ -1,0 +1,748 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf
+zedboard_master_UCF_RevC_v2.ucf
+
+Design file:              lab2_top.ncd
+Physical constraint file: lab2_top.pcf
+Device,package,speed:     xc7z020,clg484,C,-3 (PRELIMINARY 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 917194 paths analyzed, 485 endpoints analyzed, 1 failing endpoint
+ 1 timing error detected. (1 setup error, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.494ns.
+--------------------------------------------------------------------------------
+
+Paths for end point x_dff/q_9 (SLICE_X98Y50.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.055ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/xpos_9 (FF)
+  Destination:          x_dff/q_9 (FF)
+  Requirement:          1.112ns
+  Data Path Delay:      0.794ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.197ns (2.772 - 2.969)
+  Source Clock:         hdmi/clk_vgax2 rising at 38.888ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/xpos_9 to x_dff/q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y49.BQ      Tcko                  0.341   hdmi/xpos<10>
+                                                       hdmi/xpos_9
+    SLICE_X98Y50.BX      net (fanout=1)        0.432   hdmi/xpos<9>
+    SLICE_X98Y50.CLK     Tdick                 0.021   x_dff/q<10>
+                                                       x_dff/q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.794ns (0.362ns logic, 0.432ns route)
+                                                       (45.6% logic, 54.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point x_dff/q_8 (SLICE_X98Y50.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.066ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/xpos_8 (FF)
+  Destination:          x_dff/q_8 (FF)
+  Requirement:          1.112ns
+  Data Path Delay:      0.673ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.197ns (2.772 - 2.969)
+  Source Clock:         hdmi/clk_vgax2 rising at 38.888ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/xpos_8 to x_dff/q_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y49.AQ      Tcko                  0.341   hdmi/xpos<10>
+                                                       hdmi/xpos_8
+    SLICE_X98Y50.AX      net (fanout=1)        0.322   hdmi/xpos<8>
+    SLICE_X98Y50.CLK     Tdick                 0.010   x_dff/q<10>
+                                                       x_dff/q_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.673ns (0.351ns logic, 0.322ns route)
+                                                       (52.2% logic, 47.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point x_dff/q_10 (SLICE_X98Y50.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.067ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/xpos_10 (FF)
+  Destination:          x_dff/q_10 (FF)
+  Requirement:          1.112ns
+  Data Path Delay:      0.672ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.197ns (2.772 - 2.969)
+  Source Clock:         hdmi/clk_vgax2 rising at 38.888ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/xpos_10 to x_dff/q_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y49.CQ      Tcko                  0.341   hdmi/xpos<10>
+                                                       hdmi/xpos_10
+    SLICE_X98Y50.CX      net (fanout=1)        0.324   hdmi/xpos<10>
+    SLICE_X98Y50.CLK     Tdick                 0.007   x_dff/q<10>
+                                                       x_dff/q_10
+    -------------------------------------------------  ---------------------------
+    Total                                      0.672ns (0.348ns logic, 0.324ns route)
+                                                       (51.8% logic, 48.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point fpa_vga/char_color_reg/q_4 (SLICE_X100Y53.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.014ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               x_dff/q_1 (FF)
+  Destination:          fpa_vga/char_color_reg/q_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.282ns (Levels of Logic = 1)
+  Clock Path Skew:      0.268ns (0.879 - 0.611)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: x_dff/q_1 to fpa_vga/char_color_reg/q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X96Y47.BQ      Tcko                  0.164   x_dff/q<3>
+                                                       x_dff/q_1
+    SLICE_X100Y53.C6     net (fanout=1)        0.194   x_dff/q<1>
+    SLICE_X100Y53.CLK    Tah         (-Th)     0.076   fpa_vga/char_color_reg/q<5>
+                                                       fpa_vga/char_color<4>1
+                                                       fpa_vga/char_color_reg/q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.282ns (0.088ns logic, 0.194ns route)
+                                                       (31.2% logic, 68.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fpa_vga_tcgrom/Mram_data (RAMB18_X5Y20.ADDRARDADDR3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.036ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               y_dff/q_3 (FF)
+  Destination:          fpa_vga_tcgrom/Mram_data (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.341ns (Levels of Logic = 0)
+  Clock Path Skew:      0.305ns (0.916 - 0.611)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: y_dff/q_3 to fpa_vga_tcgrom/Mram_data
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X94Y48.DQ           Tcko                  0.164   y_dff/q<3>
+                                                            y_dff/q_3
+    RAMB18_X5Y20.ADDRARDADDR3 net (fanout=1)        0.360   y_dff/q<3>
+    RAMB18_X5Y20.RDCLK        Trckc_ADDRA (-Th)     0.183   fpa_vga_tcgrom/Mram_data
+                                                            fpa_vga_tcgrom/Mram_data
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.341ns (-0.019ns logic, 0.360ns route)
+                                                            (-5.6% logic, 105.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fpa_vga/char_color_reg/q_0 (SLICE_X101Y53.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.114ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               y_dff/q_0 (FF)
+  Destination:          fpa_vga/char_color_reg/q_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.382ns (Levels of Logic = 1)
+  Clock Path Skew:      0.268ns (0.879 - 0.611)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    clk_100_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: y_dff/q_0 to fpa_vga/char_color_reg/q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X94Y48.AQ      Tcko                  0.164   y_dff/q<3>
+                                                       y_dff/q_0
+    SLICE_X101Y53.A5     net (fanout=1)        0.264   y_dff/q<0>
+    SLICE_X101Y53.CLK    Tah         (-Th)     0.046   fpa_vga/char_color_reg/q<1>
+                                                       fpa_vga/char_color<0>1
+                                                       fpa_vga/char_color_reg/q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.382ns (0.118ns logic, 0.264ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.307ns (period - min period limit)
+  Period: 5.556ns
+  Min period limit: 1.249ns (800.641MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: hdmi/PLLE2_BASE_inst/CLKOUT1
+  Logical resource: hdmi/PLLE2_BASE_inst/CLKOUT1
+  Location pin: PLLE2_ADV_X0Y0.CLKOUT1
+  Clock network: hdmi/clk_vgax2
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: hdmi/PLLE2_BASE_inst/CLKIN1
+  Logical resource: hdmi/PLLE2_BASE_inst/CLKIN1
+  Location pin: PLLE2_ADV_X0Y0.CLKIN1
+  Clock network: clk_100_IBUF
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: hdmi/PLLE2_BASE_inst/CLKIN1
+  Logical resource: hdmi/PLLE2_BASE_inst/CLKIN1
+  Location pin: PLLE2_ADV_X0Y0.CLKIN1
+  Clock network: clk_100_IBUF
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" TS_clk_100 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4061 paths analyzed, 765 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.260ns.
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_8 (SLICE_X53Y27.A4), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.740ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/Inst_i2c_sender/address_5 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.330ns (Levels of Logic = 1)
+  Clock Path Skew:      0.147ns (1.386 - 1.239)
+  Source Clock:         hdmi/clk rising at 0.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.077ns
+
+  Clock Uncertainty:          0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.135ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/Inst_i2c_sender/address_5 to hdmi/Inst_i2c_sender/reg_value_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y29.BQ      Tcko                  0.341   hdmi/Inst_i2c_sender/address<5>
+                                                       hdmi/Inst_i2c_sender/address_5
+    SLICE_X53Y27.A4      net (fanout=17)       6.922   hdmi/Inst_i2c_sender/address<5>
+    SLICE_X53Y27.CLK     Tas                   0.067   hdmi/Inst_i2c_sender/reg_value<11>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs81
+                                                       hdmi/Inst_i2c_sender/reg_value_8
+    -------------------------------------------------  ---------------------------
+    Total                                      7.330ns (0.408ns logic, 6.922ns route)
+                                                       (5.6% logic, 94.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_11 (SLICE_X53Y27.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.801ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/Inst_i2c_sender/address_5 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.269ns (Levels of Logic = 1)
+  Clock Path Skew:      0.147ns (1.386 - 1.239)
+  Source Clock:         hdmi/clk rising at 0.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.077ns
+
+  Clock Uncertainty:          0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.135ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/Inst_i2c_sender/address_5 to hdmi/Inst_i2c_sender/reg_value_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y29.BQ      Tcko                  0.341   hdmi/Inst_i2c_sender/address<5>
+                                                       hdmi/Inst_i2c_sender/address_5
+    SLICE_X53Y27.D6      net (fanout=17)       4.864   hdmi/Inst_i2c_sender/address<5>
+    SLICE_X53Y27.CLK     Tas                   0.064   hdmi/Inst_i2c_sender/reg_value<11>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs1111
+                                                       hdmi/Inst_i2c_sender/reg_value_11
+    -------------------------------------------------  ---------------------------
+    Total                                      5.269ns (0.405ns logic, 4.864ns route)
+                                                       (7.7% logic, 92.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_10 (SLICE_X53Y27.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.804ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/Inst_i2c_sender/address_5 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_10 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.266ns (Levels of Logic = 1)
+  Clock Path Skew:      0.147ns (1.386 - 1.239)
+  Source Clock:         hdmi/clk rising at 0.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.077ns
+
+  Clock Uncertainty:          0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.135ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/Inst_i2c_sender/address_5 to hdmi/Inst_i2c_sender/reg_value_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y29.BQ      Tcko                  0.341   hdmi/Inst_i2c_sender/address<5>
+                                                       hdmi/Inst_i2c_sender/address_5
+    SLICE_X53Y27.C6      net (fanout=17)       4.860   hdmi/Inst_i2c_sender/address<5>
+    SLICE_X53Y27.CLK     Tas                   0.065   hdmi/Inst_i2c_sender/reg_value<11>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs101
+                                                       hdmi/Inst_i2c_sender/reg_value_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.266ns (0.406ns logic, 4.860ns route)
+                                                       (7.7% logic, 92.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" TS_clk_100 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_15 (SLICE_X52Y27.D3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.009ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/Inst_i2c_sender/address_2 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.518ns (Levels of Logic = 1)
+  Clock Path Skew:      0.509ns (0.994 - 0.485)
+  Source Clock:         hdmi/clk rising at 10.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/Inst_i2c_sender/address_2 to hdmi/Inst_i2c_sender/reg_value_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y28.CQ      Tcko                  0.141   hdmi/Inst_i2c_sender/address<3>
+                                                       hdmi/Inst_i2c_sender/address_2
+    SLICE_X52Y27.D3      net (fanout=17)       0.424   hdmi/Inst_i2c_sender/address<2>
+    SLICE_X52Y27.CLK     Tah         (-Th)     0.047   hdmi/Inst_i2c_sender/reg_value<15>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs151
+                                                       hdmi/Inst_i2c_sender/reg_value_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.518ns (0.094ns logic, 0.424ns route)
+                                                       (18.1% logic, 81.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_13 (SLICE_X52Y27.B1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.027ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/Inst_i2c_sender/address_4 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_13 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.535ns (Levels of Logic = 1)
+  Clock Path Skew:      0.508ns (0.994 - 0.486)
+  Source Clock:         hdmi/clk rising at 10.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/Inst_i2c_sender/address_4 to hdmi/Inst_i2c_sender/reg_value_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y29.AQ      Tcko                  0.141   hdmi/Inst_i2c_sender/address<5>
+                                                       hdmi/Inst_i2c_sender/address_4
+    SLICE_X52Y27.B1      net (fanout=17)       0.441   hdmi/Inst_i2c_sender/address<4>
+    SLICE_X52Y27.CLK     Tah         (-Th)     0.047   hdmi/Inst_i2c_sender/reg_value<15>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs131
+                                                       hdmi/Inst_i2c_sender/reg_value_13
+    -------------------------------------------------  ---------------------------
+    Total                                      0.535ns (0.094ns logic, 0.441ns route)
+                                                       (17.6% logic, 82.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/Inst_i2c_sender/reg_value_9 (SLICE_X53Y27.B1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.027ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/Inst_i2c_sender/address_4 (FF)
+  Destination:          hdmi/Inst_i2c_sender/reg_value_9 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.535ns (Levels of Logic = 1)
+  Clock Path Skew:      0.508ns (0.994 - 0.486)
+  Source Clock:         hdmi/clk rising at 10.000ns
+  Destination Clock:    hdmi/clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/Inst_i2c_sender/address_4 to hdmi/Inst_i2c_sender/reg_value_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y29.AQ      Tcko                  0.141   hdmi/Inst_i2c_sender/address<5>
+                                                       hdmi/Inst_i2c_sender/address_4
+    SLICE_X53Y27.B1      net (fanout=17)       0.441   hdmi/Inst_i2c_sender/address<4>
+    SLICE_X53Y27.CLK     Tah         (-Th)     0.047   hdmi/Inst_i2c_sender/reg_value<11>
+                                                       hdmi/Inst_i2c_sender_Mram_reg_value_pairs91
+                                                       hdmi/Inst_i2c_sender/reg_value_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.535ns (0.094ns logic, 0.441ns route)
+                                                       (17.6% logic, 82.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" TS_clk_100 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.500ns (Tcl)
+  Physical resource: hdmi/Inst_i2c_sender/address<3>/CLK
+  Logical resource: hdmi/Inst_i2c_sender/address_0/CK
+  Location pin: SLICE_X49Y28.CLK
+  Clock network: hdmi/clk
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.500ns (Tch)
+  Physical resource: hdmi/Inst_i2c_sender/address<3>/CLK
+  Logical resource: hdmi/Inst_i2c_sender/address_0/CK
+  Location pin: SLICE_X49Y28.CLK
+  Clock network: hdmi/clk
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.000ns (1000.000MHz) (Tcp)
+  Physical resource: hdmi/Inst_i2c_sender/address<3>/CLK
+  Logical resource: hdmi/Inst_i2c_sender/address_0/CK
+  Location pin: SLICE_X49Y28.CLK
+  Clock network: hdmi/clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_hdmi_clk_vgax2 = PERIOD TIMEGRP "hdmi_clk_vgax2" 
+TS_clk_100 / 1.8 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1135 paths analyzed, 222 endpoints analyzed, 22 failing endpoints
+ 22 timing errors detected. (22 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.535ns.
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/hdmi_d_8 (SLICE_X101Y23.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.596ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               converted_8 (FF)
+  Destination:          hdmi/hdmi_d_8 (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      1.081ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.450ns (2.626 - 3.076)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 11.111ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: converted_8 to hdmi/hdmi_d_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X93Y22.AMUX    Tshcko                0.431   converted<15>
+                                                       converted_8
+    SLICE_X101Y23.A3     net (fanout=1)        0.583   converted<8>
+    SLICE_X101Y23.CLK    Tas                   0.067   hdmi/hdmi_d<11>
+                                                       hdmi/Mmux_Cb[15]_Y[15]_mux_16_OUT71
+                                                       hdmi/hdmi_d_8
+    -------------------------------------------------  ---------------------------
+    Total                                      1.081ns (0.498ns logic, 0.583ns route)
+                                                       (46.1% logic, 53.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/hdmi_d_9 (SLICE_X101Y23.B4), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.475ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               converted_1 (FF)
+  Destination:          hdmi/hdmi_d_9 (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      0.961ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.449ns (2.626 - 3.075)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 11.111ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: converted_1 to hdmi/hdmi_d_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y23.AQ      Tcko                  0.341   converted<7>
+                                                       converted_1
+    SLICE_X101Y23.B4     net (fanout=1)        0.555   converted<1>
+    SLICE_X101Y23.CLK    Tas                   0.065   hdmi/hdmi_d<11>
+                                                       hdmi/Mmux_Cb[15]_Y[15]_mux_16_OUT81
+                                                       hdmi/hdmi_d_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.961ns (0.406ns logic, 0.555ns route)
+                                                       (42.2% logic, 57.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/hdmi_d_9 (SLICE_X101Y23.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.431ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               converted_9 (FF)
+  Destination:          hdmi/hdmi_d_9 (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      0.916ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.450ns (2.626 - 3.076)
+  Source Clock:         clk_100_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 11.111ns
+  Clock Uncertainty:    0.176ns
+
+  Clock Uncertainty:          0.176ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.121ns
+    Phase Error (PE):           0.105ns
+
+  Maximum Data Path at Slow Process Corner: converted_9 to hdmi/hdmi_d_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X93Y22.AQ      Tcko                  0.341   converted<15>
+                                                       converted_9
+    SLICE_X101Y23.B5     net (fanout=1)        0.510   converted<9>
+    SLICE_X101Y23.CLK    Tas                   0.065   hdmi/hdmi_d<11>
+                                                       hdmi/Mmux_Cb[15]_Y[15]_mux_16_OUT81
+                                                       hdmi/hdmi_d_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.916ns (0.406ns logic, 0.510ns route)
+                                                       (44.3% logic, 55.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_hdmi_clk_vgax2 = PERIOD TIMEGRP "hdmi_clk_vgax2" TS_clk_100 / 1.8 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/ypos_7 (SLICE_X98Y48.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.189ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/vcounter_7 (FF)
+  Destination:          hdmi/ypos_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.226ns (Levels of Logic = 0)
+  Clock Path Skew:      0.037ns (0.358 - 0.321)
+  Source Clock:         hdmi/clk_vgax2 rising at 0.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/vcounter_7 to hdmi/ypos_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X97Y47.DQ      Tcko                  0.141   hdmi/vcounter<7>
+                                                       hdmi/vcounter_7
+    SLICE_X98Y48.DX      net (fanout=5)        0.148   hdmi/vcounter<7>
+    SLICE_X98Y48.CLK     Tckdi       (-Th)     0.063   hdmi/ypos<7>
+                                                       hdmi/ypos_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.226ns (0.078ns logic, 0.148ns route)
+                                                       (34.5% logic, 65.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/vsync (SLICE_X97Y45.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.203ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/vcounter_2 (FF)
+  Destination:          hdmi/vsync (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.219ns (Levels of Logic = 1)
+  Clock Path Skew:      0.016ns (0.087 - 0.071)
+  Source Clock:         hdmi/clk_vgax2 rising at 0.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/vcounter_2 to hdmi/vsync
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X97Y46.CQ      Tcko                  0.141   hdmi/vcounter<3>
+                                                       hdmi/vcounter_2
+    SLICE_X97Y45.A6      net (fanout=5)        0.124   hdmi/vcounter<2>
+    SLICE_X97Y45.CLK     Tah         (-Th)     0.046   hdmi/vsync
+                                                       hdmi/vsync_rstpot
+                                                       hdmi/vsync
+    -------------------------------------------------  ---------------------------
+    Total                                      0.219ns (0.095ns logic, 0.124ns route)
+                                                       (43.4% logic, 56.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi/ypos_5 (SLICE_X98Y48.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.211ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi/vcounter_5 (FF)
+  Destination:          hdmi/ypos_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.248ns (Levels of Logic = 0)
+  Clock Path Skew:      0.037ns (0.358 - 0.321)
+  Source Clock:         hdmi/clk_vgax2 rising at 0.000ns
+  Destination Clock:    hdmi/clk_vgax2 rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi/vcounter_5 to hdmi/ypos_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X97Y47.BQ      Tcko                  0.141   hdmi/vcounter<7>
+                                                       hdmi/vcounter_5
+    SLICE_X98Y48.BX      net (fanout=6)        0.159   hdmi/vcounter<5>
+    SLICE_X98Y48.CLK     Tckdi       (-Th)     0.052   hdmi/ypos<7>
+                                                       hdmi/ypos_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.248ns (0.089ns logic, 0.159ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_hdmi_clk_vgax2 = PERIOD TIMEGRP "hdmi_clk_vgax2" TS_clk_100 / 1.8 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.292ns (period - min period limit)
+  Period: 5.555ns
+  Min period limit: 1.263ns (791.766MHz) (Tockper)
+  Physical resource: hdmi_clock_OBUF/CLK
+  Logical resource: hdmi/ODDR_inst/CK
+  Location pin: OLOGIC_X1Y23.CLK
+  Clock network: hdmi/clk_vgax2
+--------------------------------------------------------------------------------
+Slack: 4.555ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.555ns
+  Low pulse: 2.777ns
+  Low pulse limit: 0.500ns (Tcl)
+  Physical resource: hdmi/hcounter<3>/CLK
+  Logical resource: hdmi/hcounter_0/CK
+  Location pin: SLICE_X96Y44.CLK
+  Clock network: hdmi/clk_vgax2
+--------------------------------------------------------------------------------
+Slack: 4.555ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.555ns
+  High pulse: 2.777ns
+  High pulse limit: 0.500ns (Tch)
+  Physical resource: hdmi/hcounter<3>/CLK
+  Logical resource: hdmi/hcounter_0/CK
+  Location pin: SLICE_X96Y44.CLK
+  Clock network: hdmi/clk_vgax2
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_clk_100
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk_100                     |     10.000ns|     10.494ns|     15.363ns|            1|           22|       917194|         5196|
+| TS_hdmi_clk                   |     10.000ns|      7.260ns|          N/A|            0|            0|         4061|            0|
+| TS_hdmi_clk_vgax2             |      5.556ns|      8.535ns|          N/A|           22|            0|         1135|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |    8.269|         |    2.048|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 23  Score: 6383  (Setup/Max: 6383, Hold: 0)
+
+Constraints cover 922390 paths, 0 nets, and 2100 connections
+
+Design statistics:
+   Minimum period:  10.494ns{1}   (Maximum frequency:  95.293MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jan 30 17:57:41 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 392 MB
+
+
+

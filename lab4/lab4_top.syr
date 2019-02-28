@@ -1,0 +1,1428 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: lab4_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab4_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab4_top"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : lab4_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\sine_rom.v" into library work
+Parsing module <sine_rom>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v" into library work
+Parsing module <dff>.
+Parsing module <dffr>.
+Parsing module <dffre>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\song_rom.v" into library work
+Parsing module <song_rom>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\sine_reader.v" into library work
+Parsing module <sine_reader>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\frequency_rom.v" into library work
+Parsing module <frequency_rom>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\song_reader.v" into library work
+Parsing module <song_reader>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\one_pulse.v" into library work
+Parsing module <one_pulse>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\note_player.v" into library work
+Parsing module <note_player>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\mcu.v" into library work
+Parsing module <mcu>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\codec_conditioner.v" into library work
+Parsing module <codec_conditioner>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\brute_force_synchronizer.v" into library work
+Parsing module <brute_force_synchronizer>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\beat_generator.v" into library work
+Parsing module <beat_generator>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\music_player.v" into library work
+Parsing module <music_player>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\button_press_unit.v" into library work
+Parsing module <button_press_unit>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\adau1761_codec.v" into library work
+Parsing module <adau1761_codec>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" into library work
+Parsing module <lab4_top>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\i3c2.vhd" into library work
+Parsing entity <i3c2>.
+Parsing architecture <Behavioral> of entity <i3c2>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\adau1761_configuraiton_data.vhd" into library work
+Parsing entity <adau1761_configuraiton_data>.
+Parsing architecture <Behavioral> of entity <adau1761_configuraiton_data>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\i2s_data_interface.vhd" into library work
+Parsing entity <i2s_data_interface>.
+Parsing architecture <Behavioral> of entity <i2s_data_interface>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" into library work
+Parsing entity <i2c>.
+Parsing architecture <Behavioral> of entity <i2c>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\ADAU1761_interface.vhd" into library work
+Parsing entity <ADAU1761_interface>.
+Parsing architecture <Behavioral> of entity <adau1761_interface>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\clocking.vhd" into library work
+Parsing entity <clocking>.
+Parsing architecture <xilinx> of entity <clocking>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab4\adau1761_izedboard.vhd" into library work
+Parsing entity <adau1761_izedboard>.
+Parsing architecture <Behavioral> of entity <adau1761_izedboard>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lab4_top>.
+
+Elaborating module <button_press_unit(WIDTH=20)>.
+
+Elaborating module <brute_force_synchronizer>.
+
+Elaborating module <dff(WIDTH=1)>.
+
+Elaborating module <debouncer(WIDTH=20)>.
+
+Elaborating module <dffr(WIDTH=20)>.
+
+Elaborating module <dffr(WIDTH=2)>.
+
+Elaborating module <one_pulse>.
+
+Elaborating module <dffr>.
+
+Elaborating module <music_player(BEAT_COUNT=1000)>.
+
+Elaborating module <mcu>.
+
+Elaborating module <song_reader>.
+
+Elaborating module <song_rom>.
+
+Elaborating module <dffr(WIDTH=3)>.
+
+Elaborating module <dffr(WIDTH=5)>.
+"\\afs\ir\class\ee108\groups\02\lab4\song_reader.v" Line 52. $display Playing note 0 of song 0, which is note 0 duration 0
+
+Elaborating module <note_player>.
+
+Elaborating module <dffre(WIDTH=7)>.
+
+Elaborating module <dffre(WIDTH=6)>.
+
+Elaborating module <frequency_rom>.
+
+Elaborating module <sine_reader>.
+
+Elaborating module <sine_rom>.
+
+Elaborating module <dffre(WIDTH=22)>.
+WARNING:HDLCompiler:189 - "\\afs\ir\class\ee108\groups\02\lab4\sine_reader.v" Line 48: Size mismatch in connection of port <d>. Formal port size is 2-bit while actual signal size is 1-bit.
+
+Elaborating module <beat_generator(WIDTH=10,STOP=1000)>.
+
+Elaborating module <dffre(WIDTH=10)>.
+
+Elaborating module <codec_conditioner>.
+
+Elaborating module <dffre(WIDTH=1)>.
+
+Elaborating module <dffre(WIDTH=16)>.
+WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" Line 71: Assignment to new_sample ignored, since the identifier is never used
+
+Elaborating module <adau1761_codec>.
+Going to vhdl side to elaborate module adau1761_izedboard
+
+Elaborating entity <adau1761_izedboard> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <i2c> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <adau1761_configuraiton_data> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <i3c2> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ADAU1761_interface> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <i2s_data_interface> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module clocking
+
+Elaborating entity <clocking> (architecture <xilinx>) from library <work>.
+Back to verilog to continue elaboration
+WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" Line 104: Assignment to line_in_l ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" Line 105: Assignment to line_in_r ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab4_top>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v".
+        BPU_WIDTH = 20
+        BEAT_COUNT = 1000
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" line 64: Output port <new_sample_generated> of the instance <music_player> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" line 90: Output port <line_in_l> of the instance <adau1761_codec> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\lab4_top.v" line 90: Output port <line_in_r> of the instance <adau1761_codec> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <lab4_top> synthesized.
+
+Synthesizing Unit <button_press_unit>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\button_press_unit.v".
+        WIDTH = 20
+    Summary:
+	no macro.
+Unit <button_press_unit> synthesized.
+
+Synthesizing Unit <brute_force_synchronizer>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\brute_force_synchronizer.v".
+        WIDTH = 1
+    Summary:
+	no macro.
+Unit <brute_force_synchronizer> synthesized.
+
+Synthesizing Unit <dff>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 1
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\debouncer.v".
+        WIDTH = 20
+    Found 20-bit adder for signal <counter_out[19]_GND_5_o_add_0_OUT> created at line 24.
+    Found 1-bit 4-to-1 multiplexer for signal <counter_reset> created at line 48.
+    Found 2-bit 4-to-1 multiplexer for signal <next_state_d> created at line 48.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <debouncer> synthesized.
+
+Synthesizing Unit <dffr_1>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 20
+    Found 20-bit register for signal <q>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <dffr_1> synthesized.
+
+Synthesizing Unit <dffr_2>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 2
+    Found 2-bit register for signal <q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <dffr_2> synthesized.
+
+Synthesizing Unit <one_pulse>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\one_pulse.v".
+    Summary:
+	no macro.
+Unit <one_pulse> synthesized.
+
+Synthesizing Unit <dffr>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 1
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dffr> synthesized.
+
+Synthesizing Unit <music_player>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\music_player.v".
+        BEAT_COUNT = 1000
+    Summary:
+	no macro.
+Unit <music_player> synthesized.
+
+Synthesizing Unit <mcu>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\mcu.v".
+    Found 2-bit adder for signal <song[1]_GND_11_o_add_1_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 Multiplexer(s).
+Unit <mcu> synthesized.
+
+Synthesizing Unit <song_reader>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\song_reader.v".
+    Found 5-bit adder for signal <curr_note[4]_GND_12_o_add_2_OUT> created at line 46.
+    Found 8x1-bit Read Only RAM for signal <note_ready>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <song_reader> synthesized.
+
+Synthesizing Unit <song_rom>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\song_rom.v".
+    Found 12-bit register for signal <dout>.
+    Found 128x12-bit Read Only RAM for signal <addr[6]_memory[127][11]_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+Unit <song_rom> synthesized.
+
+Synthesizing Unit <dffr_3>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 3
+    Found 3-bit register for signal <q>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <dffr_3> synthesized.
+
+Synthesizing Unit <dffr_4>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 5
+    Found 5-bit register for signal <q>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <dffr_4> synthesized.
+
+Synthesizing Unit <note_player>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\note_player.v".
+    Found 7-bit adder for signal <count[6]_GND_16_o_add_1_OUT> created at line 32.
+    Found 7-bit comparator equal for signal <done_with_note> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <note_player> synthesized.
+
+Synthesizing Unit <dffre_1>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 7
+    Found 7-bit register for signal <q>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <dffre_1> synthesized.
+
+Synthesizing Unit <dffre_2>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 6
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <dffre_2> synthesized.
+
+Synthesizing Unit <frequency_rom>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\frequency_rom.v".
+    Found 20-bit register for signal <dout>.
+    Found 64x20-bit Read Only RAM for signal <addr[5]_memory[63][19]_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  20 D-type flip-flop(s).
+Unit <frequency_rom> synthesized.
+
+Synthesizing Unit <sine_reader>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\sine_reader.v".
+    Found 20-bit subtractor for signal <PWR_20_o_curr_addr[19]_sub_5_OUT> created at line 31.
+    Found 20-bit subtractor for signal <PWR_20_o_step_size[19]_sub_8_OUT> created at line 32.
+    Found 20-bit subtractor for signal <curr_addr[19]_step_size[19]_sub_16_OUT> created at line 36.
+    Found 20-bit adder for signal <curr_addr[19]_GND_20_o_add_3_OUT> created at line 31.
+    Found 20-bit adder for signal <n0050> created at line 31.
+    Found 2-bit adder for signal <curr_addr[21]_GND_20_o_add_18_OUT> created at line 37.
+    Found 16-bit subtractor for signal <GND_20_o_rom_out[15]_sub_22_OUT> created at line 49.
+    Found 20-bit subtractor for signal <_n0058> created at line 36.
+    Found 20-bit subtractor for signal <GND_20_o_curr_addr[19]_sub_15_OUT> created at line 36.
+    Found 20-bit comparator greater for signal <PWR_20_o_curr_addr[19]_LessThan_2_o> created at line 31
+    Found 20-bit comparator lessequal for signal <n0006> created at line 32
+    Found 20-bit comparator greater for signal <curr_addr[19]_step_size[19]_LessThan_12_o> created at line 36
+    Found 20-bit comparator lessequal for signal <n0014> created at line 37
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <sine_reader> synthesized.
+
+Synthesizing Unit <sine_rom>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\sine_rom.v".
+    Found 16-bit register for signal <dout>.
+    Found 1024x16-bit Read Only RAM for signal <addr[9]_memory[1023][15]_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <sine_rom> synthesized.
+
+Synthesizing Unit <dffre_3>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 22
+    Found 22-bit register for signal <q>.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+Unit <dffre_3> synthesized.
+
+Synthesizing Unit <beat_generator>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\beat_generator.v".
+        WIDTH = 10
+        STOP = 1000
+    Found 10-bit adder for signal <count[9]_GND_23_o_add_1_OUT> created at line 15.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <beat_generator> synthesized.
+
+Synthesizing Unit <dffre_4>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 10
+    Found 10-bit register for signal <q>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <dffre_4> synthesized.
+
+Synthesizing Unit <codec_conditioner>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\codec_conditioner.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <codec_conditioner> synthesized.
+
+Synthesizing Unit <dffre_5>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 1
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dffre_5> synthesized.
+
+Synthesizing Unit <dffre_6>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ff_lib.v".
+        WIDTH = 16
+    Found 16-bit register for signal <q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <dffre_6> synthesized.
+
+Synthesizing Unit <adau1761_codec>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\adau1761_codec.v".
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\adau1761_codec.v" line 61: Output port <LOCKED> of the instance <codec_clock_gen> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <adau1761_codec> synthesized.
+
+Synthesizing Unit <adau1761_izedboard>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\adau1761_izedboard.vhd".
+    Summary:
+	no macro.
+Unit <adau1761_izedboard> synthesized.
+
+Synthesizing Unit <i2c>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd".
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <outputs> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <reg_addr> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <reg_data> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <reg_write> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <debug_scl> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <debug_sda> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\02\lab4\i2c.vhd" line 58: Output port <error> of the instance <Inst_i3c2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <i2c> synthesized.
+
+Synthesizing Unit <adau1761_configuraiton_data>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\adau1761_configuraiton_data.vhd".
+    Found 9-bit register for signal <data>.
+    Found 128x9-bit Read Only RAM for signal <_n0373>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+Unit <adau1761_configuraiton_data> synthesized.
+
+Synthesizing Unit <i3c2>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\i3c2.vhd".
+        clk_divide = "01111000"
+    Found 1-bit register for signal <i2c_scl>.
+    Found 1-bit register for signal <debug_scl>.
+    Found 1-bit register for signal <i2c_sda_t>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <bitcount>.
+    Found 9-bit register for signal <i2c_data>.
+    Found 8-bit register for signal <reg_data>.
+    Found 1-bit register for signal <ack_flag>.
+    Found 10-bit register for signal <pcnext>.
+    Found 4-bit register for signal <i2c_bits_left>.
+    Found 16-bit register for signal <delay>.
+    Found 1-bit register for signal <skip>.
+    Found 1-bit register for signal <i2c_doing_read>.
+    Found 5-bit register for signal <reg_addr>.
+    Found 16-bit register for signal <outputs>.
+    Found 1-bit register for signal <i2c_started>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 22                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <pcnext[9]_GND_36_o_add_56_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_36_o_GND_36_o_sub_42_OUT<3:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_36_o_GND_36_o_sub_58_OUT<7:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_36_o_GND_36_o_sub_66_OUT<15:0>> created at line 1308.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred 127 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <i3c2> synthesized.
+
+Synthesizing Unit <ADAU1761_interface>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\ADAU1761_interface.vhd".
+    Found 1-bit register for signal <master_clk>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <ADAU1761_interface> synthesized.
+
+Synthesizing Unit <i2s_data_interface>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\i2s_data_interface.vhd".
+    Found 127-bit register for signal <sr_in>.
+    Found 1-bit register for signal <i2s_d_out>.
+    Found 24-bit register for signal <audio_l_out>.
+    Found 24-bit register for signal <audio_r_out>.
+    Found 64-bit register for signal <sr_out>.
+    Found 1-bit register for signal <i2s_lr_last>.
+    Found 10-bit register for signal <bclk_delay>.
+    Found 1-bit register for signal <i2s_d_in_last>.
+    Found 1-bit register for signal <new_sample>.
+    Summary:
+	inferred 253 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <i2s_data_interface> synthesized.
+
+Synthesizing Unit <clocking>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab4\clocking.vhd".
+    Summary:
+	no macro.
+Unit <clocking> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 1024x16-bit single-port Read Only RAM                 : 1
+ 128x12-bit single-port Read Only RAM                  : 1
+ 128x9-bit single-port Read Only RAM                   : 1
+ 64x20-bit single-port Read Only RAM                   : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 2
+ 16-bit subtractor                                     : 2
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 4
+ 20-bit subtractor                                     : 5
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 54
+ 1-bit register                                        : 22
+ 10-bit register                                       : 3
+ 12-bit register                                       : 1
+ 127-bit register                                      : 1
+ 16-bit register                                       : 5
+ 2-bit register                                        : 5
+ 20-bit register                                       : 3
+ 22-bit register                                       : 1
+ 24-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+ 64-bit register                                       : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 2
+# Comparators                                          : 5
+ 20-bit comparator greater                             : 2
+ 20-bit comparator lessequal                           : 2
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 157
+ 1-bit 2-to-1 multiplexer                              : 84
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 6
+ 2-bit 4-to-1 multiplexer                              : 2
+ 20-bit 2-to-1 multiplexer                             : 3
+ 22-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 13
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 15
+ 9-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <q_1> of sequential type is unconnected in block <sign_flipflop>.
+
+Synthesizing (advanced) Unit <beat_generator>.
+The following registers are absorbed into counter <counter/q>: 1 register on signal <counter/q>.
+Unit <beat_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debouncer>.
+The following registers are absorbed into counter <counter/q>: 1 register on signal <counter/q>.
+Unit <debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <frequency_rom>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <q> prevents it from being combined with the RAM <Mram_addr[5]_memory[63][19]_wide_mux_1_OUT> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 20-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_addr[5]_memory[63][19]_wide_mux_1_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+Unit <frequency_rom> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c>.
+INFO:Xst:3226 - The RAM <Inst_adau1761_configuraiton_data/Mram__n0373> will be implemented as a BLOCK RAM, absorbing the following register(s): <Inst_adau1761_configuraiton_data/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 9-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <inst_address<6:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inst_data>     |          |
+    |     dorstA         | connected to internal node          | high     |
+    | reset value        | 000000000                                      |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <i2c> synthesized (advanced).
+
+Synthesizing (advanced) Unit <note_player>.
+The following registers are absorbed into counter <counter_ff/q>: 1 register on signal <counter_ff/q>.
+Unit <note_player> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sine_reader>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <rom_flipflop/q> prevents it from being combined with the RAM <s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <curr_addr<19:10>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <s_rom/dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <curr_addr<19:10>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rom_out>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sine_reader> synthesized (advanced).
+
+Synthesizing (advanced) Unit <song_reader>.
+The following registers are absorbed into counter <state_flipflop/q>: 1 register on signal <state_flipflop/q>.
+INFO:Xst:3231 - The small RAM <Mram_note_ready> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <note_ready>    |          |
+    -----------------------------------------------------------------------
+Unit <song_reader> synthesized (advanced).
+
+Synthesizing (advanced) Unit <song_rom>.
+INFO:Xst:3226 - The RAM <Mram_addr[6]_memory[127][11]_wide_mux_1_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 12-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <song_rom> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 1024x16-bit single-port block Read Only RAM           : 1
+ 128x12-bit single-port block Read Only RAM            : 1
+ 128x9-bit single-port block Read Only RAM             : 1
+ 64x20-bit single-port distributed Read Only RAM       : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 12
+ 10-bit adder                                          : 1
+ 16-bit subtractor                                     : 2
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 1
+ 20-bit subtractor                                     : 4
+ 4-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 5-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 409
+ Flip-Flops                                            : 409
+# Comparators                                          : 5
+ 20-bit comparator greater                             : 2
+ 20-bit comparator lessequal                           : 2
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 128
+ 1-bit 2-to-1 multiplexer                              : 61
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 6
+ 2-bit 4-to-1 multiplexer                              : 2
+ 20-bit 2-to-1 multiplexer                             : 3
+ 22-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 13
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <sign_flipflop/q_1> of sequential type is unconnected in block <sine_reader>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <adau1761_codec/i2c_interface/Inst_i2c/FSM_0> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0011  | 001
+ 0010  | 010
+ 0001  | 011
+ 0100  | 100
+-------------------
+WARNING:Xst:1710 - FF/Latch <dout_19> (without init value) has a constant value of 0 in block <frequency_rom>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sr_out_24> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_25> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_26> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_27> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_28> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_29> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_30> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_31> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_32> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_33> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_34> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_35> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_36> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_37> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_38> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_39> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_40> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_41> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_42> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_43> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_44> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_45> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_46> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_47> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_0> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_1> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_2> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_3> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_4> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_5> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_6> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_7> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_8> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_9> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_10> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_11> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_12> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_13> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_14> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_15> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_16> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_17> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_18> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_19> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_20> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_21> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_22> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_23> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <dffre_6> ...
+
+Optimizing unit <lab4_top> ...
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <mcu> ...
+
+Optimizing unit <song_reader> ...
+
+Optimizing unit <frequency_rom> ...
+
+Optimizing unit <sine_reader> ...
+
+Optimizing unit <i2s_data_interface> ...
+
+Optimizing unit <i2c> ...
+WARNING:Xst:1710 - FF/Latch <Inst_i3c2/bitcount_7> (without init value) has a constant value of 0 in block <i2c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_23> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_22> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_21> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_20> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_19> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_18> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_17> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_16> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_15> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_14> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_13> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_12> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_11> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_10> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_9> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_8> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_7> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_6> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_5> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_4> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_3> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_2> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_1> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_r_out_0> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_23> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_22> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_21> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_20> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_19> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_18> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_17> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_16> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_15> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_14> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_13> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_12> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_11> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_10> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_9> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_8> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_7> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_6> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_5> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_4> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_3> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_2> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_1> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/audio_l_out_0> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_126> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_125> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_124> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_123> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_122> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_121> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_120> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_119> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_118> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_117> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_116> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_115> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_114> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_113> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_112> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_111> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_110> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_109> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_108> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_107> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_106> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_105> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_104> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_103> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_102> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_101> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_100> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_99> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_98> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_97> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_96> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_95> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_94> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_93> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_92> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_91> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_90> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_89> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_88> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_87> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_86> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_85> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_84> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_83> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_82> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_81> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_80> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_79> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_78> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_77> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_76> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_75> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_74> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_73> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_72> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_71> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_70> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_69> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_68> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_67> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_66> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_65> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_64> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_63> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_62> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_61> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_60> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_59> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_58> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_57> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_56> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_55> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_54> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_53> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_52> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_51> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_50> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_49> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_48> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_47> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_46> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_45> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_44> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_43> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_42> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_41> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_40> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_39> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_38> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_37> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_36> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_35> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_34> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_33> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_32> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_31> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_30> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_29> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_28> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_27> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_26> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_25> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_24> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_23> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_22> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_21> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_20> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_19> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_18> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_17> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_16> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_15> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_14> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_13> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_12> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_11> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_10> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_9> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_8> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_7> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_6> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_5> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_4> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_3> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_2> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_1> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_in_0> of sequential type is unconnected in block <lab4_top>.
+WARNING:Xst:2677 - Node <adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_d_in_last> of sequential type is unconnected in block <lab4_top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab4_top, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <lab4_top> :
+	Found 3-bit shift register for signal <next_button_press_unit/sync/ff3/q_0>.
+	Found 3-bit shift register for signal <play_button_press_unit/sync/ff3/q_0>.
+	Found 9-bit shift register for signal <adau1761_codec/i2c_interface/Inst_i2s_data_interface/bclk_delay_1>.
+Unit <lab4_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 232
+ Flip-Flops                                            : 232
+# Shift Registers                                      : 3
+ 3-bit shift register                                  : 2
+ 9-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab4_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 963
+#      GND                         : 1
+#      INV                         : 56
+#      LUT1                        : 50
+#      LUT2                        : 55
+#      LUT3                        : 95
+#      LUT4                        : 126
+#      LUT5                        : 75
+#      LUT6                        : 188
+#      MUXCY                       : 171
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 142
+# FlipFlops/Latches                : 235
+#      FD                          : 81
+#      FDE                         : 22
+#      FDR                         : 62
+#      FDRE                        : 70
+# RAMS                             : 3
+#      RAMB18E1                    : 3
+# Shift Registers                  : 3
+#      SRLC16E                     : 3
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 20
+#      IBUF                        : 6
+#      IOBUF                       : 1
+#      OBUF                        : 13
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             235  out of  106400     0%  
+ Number of Slice LUTs:                  648  out of  53200     1%  
+    Number used as Logic:               645  out of  53200     1%  
+    Number used as Memory:                3  out of  17400     0%  
+       Number used as SRL:                3
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    673
+   Number with an unused Flip Flop:     438  out of    673    65%  
+   Number with an unused LUT:            25  out of    673     3%  
+   Number of fully used LUT-FF pairs:   210  out of    673    31%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  20  out of    200    10%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    140     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------+------------------------+-------+
+Clock Signal                          | Clock buffer(FF name)  | Load  |
+--------------------------------------+------------------------+-------+
+clk                                   | IBUF+BUFG              | 163   |
+adau1761_codec/codec_clock_gen/clkout0| BUFG                   | 78    |
+--------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
+Control Signal                                       | Buffer(FF name)                                                                           | Load  |
+-----------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
+music_player/note_player/sin_read_step<19>(XST_GND:G)| NONE(music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT)| 6     |
+-----------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.885ns (Maximum Frequency: 204.708MHz)
+   Minimum input arrival time before clock: 1.484ns
+   Maximum output required time after clock: 1.454ns
+   Maximum combinational path delay: 0.562ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.224ns (frequency: 236.742MHz)
+  Total number of paths / destination ports: 16487 / 303
+-------------------------------------------------------------------------
+Delay:               4.224ns (Levels of Logic = 18)
+  Source:            music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT (RAM)
+  Destination:       music_player/codec_conditioner/next_sample_latch/q_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT to music_player/codec_conditioner/next_sample_latch/q_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO0    2   2.454   0.405  music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT (music_player/note_player/sin_read/rom_out<0>)
+     INV:I->O              1   0.067   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_lut<0>_INV_0 (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<0> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<1> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<2> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<3> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<4> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<5> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<6> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<7> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<8> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<9> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<10> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<11> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<12> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<13> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<13>)
+     MUXCY:CI->O           0   0.015   0.000  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<14> (music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_cy<14>)
+     XORCY:CI->O           1   0.320   0.413  music_player/note_player/sin_read/Msub_GND_20_o_rom_out[15]_sub_22_OUT_xor<15> (music_player/note_player/sin_read/GND_20_o_rom_out[15]_sub_22_OUT<15>)
+     LUT3:I2->O            1   0.053   0.000  music_player/note_player/sin_read/Mmux_sample71 (music_player/note_sample<15>)
+     FDRE:D                    0.011          music_player/codec_conditioner/next_sample_latch/q_15
+    ----------------------------------------
+    Total                      4.224ns (3.406ns logic, 0.818ns route)
+                                       (80.6% logic, 19.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adau1761_codec/codec_clock_gen/clkout0'
+  Clock period: 4.885ns (frequency: 204.708MHz)
+  Total number of paths / destination ports: 4521 / 102
+-------------------------------------------------------------------------
+Delay:               4.885ns (Levels of Logic = 4)
+  Source:            adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 (RAM)
+  Destination:       adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip (FF)
+  Source Clock:      adau1761_codec/codec_clock_gen/clkout0 rising
+  Destination Clock: adau1761_codec/codec_clock_gen/clkout0 rising
+
+  Data Path: adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 to adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO2   17   2.454   0.741  adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 (adau1761_codec/i2c_interface/Inst_i2c/inst_data<2>)
+     LUT4:I0->O            1   0.053   0.413  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21_SW0 (N58)
+     LUT6:I5->O            2   0.053   0.641  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/opcode<1>)
+     LUT6:I2->O            1   0.053   0.413  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_38_o_Mux_121_o11 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_38_o_Mux_121_o1)
+     LUT5:I4->O            1   0.053   0.000  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_38_o_Mux_121_o12 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state[3]_PWR_38_o_Mux_121_o)
+     FD:D                      0.011          adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip
+    ----------------------------------------
+    Total                      4.885ns (2.677ns logic, 2.208ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 143 / 143
+-------------------------------------------------------------------------
+Offset:              1.484ns (Levels of Logic = 2)
+  Source:            up_button (PAD)
+  Destination:       music_player/beat_generator/counter/q_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: up_button to music_player/beat_generator/counter/q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            81   0.000   0.648  up_button_IBUF (up_button_IBUF)
+     LUT2:I0->O           10   0.053   0.458  music_player/beat_generator/reset_GND_23_o_OR_65_o1 (music_player/beat_generator/reset_GND_23_o_OR_65_o)
+     FDRE:R                    0.325          music_player/beat_generator/counter/q_0
+    ----------------------------------------
+    Total                      1.484ns (0.378ns logic, 1.106ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adau1761_codec/codec_clock_gen/clkout0'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              1.381ns (Levels of Logic = 3)
+  Source:            AC_GPIO3 (PAD)
+  Destination:       adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_55 (FF)
+  Destination Clock: adau1761_codec/codec_clock_gen/clkout0 rising
+
+  Data Path: AC_GPIO3 to adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_55
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.000   0.485  AC_GPIO3_IBUF (AC_GPIO3_IBUF)
+     LUT2:I1->O            7   0.053   0.779  adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_179_o1 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_179_o)
+     LUT6:I0->O            1   0.053   0.000  adau1761_codec/i2c_interface/Inst_i2s_data_interface/Mmux_sr_out[62]_audio_l_in[23]_mux_5_OUT431 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out[62]_audio_l_in[23]_mux_5_OUT<49>)
+     FDE:D                     0.011          adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_49
+    ----------------------------------------
+    Total                      1.381ns (0.117ns logic, 1.264ns route)
+                                       (8.5% logic, 91.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 8
+-------------------------------------------------------------------------
+Offset:              1.454ns (Levels of Logic = 2)
+  Source:            music_player/codec_conditioner/new_frame_state/q_0 (FF)
+  Destination:       leds_l<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: music_player/codec_conditioner/new_frame_state/q_0 to leds_l<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             18   0.282   0.714  music_player/codec_conditioner/new_frame_state/q_0 (music_player/codec_conditioner/new_frame_state/q_0)
+     LUT4:I1->O            2   0.053   0.405  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
+     OBUF:I->O                 0.000          leds_r_3_OBUF (leds_r<3>)
+    ----------------------------------------
+    Total                      1.454ns (0.335ns logic, 1.119ns route)
+                                       (23.0% logic, 77.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adau1761_codec/codec_clock_gen/clkout0'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              1.344ns (Levels of Logic = 2)
+  Source:            adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (FF)
+  Destination:       leds_l<3> (PAD)
+  Source Clock:      adau1761_codec/codec_clock_gen/clkout0 rising
+
+  Data Path: adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample to leds_l<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.282   0.604  adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample)
+     LUT4:I2->O            2   0.053   0.405  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
+     OBUF:I->O                 0.000          leds_r_3_OBUF (leds_r<3>)
+    ----------------------------------------
+    Total                      1.344ns (0.335ns logic, 1.009ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.562ns (Levels of Logic = 1)
+  Source:            up_button (PAD)
+  Destination:       adau1761_codec/codec_clock_gen/mmcm_adv_inst:RST (PAD)
+
+  Data Path: up_button to adau1761_codec/codec_clock_gen/mmcm_adv_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            81   0.000   0.562  up_button_IBUF (up_button_IBUF)
+    MMCME2_ADV:RST             0.000          adau1761_codec/codec_clock_gen/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.562ns (0.000ns logic, 0.562ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock adau1761_codec/codec_clock_gen/clkout0
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+adau1761_codec/codec_clock_gen/clkout0|    4.885|         |         |         |
+clk                                   |    1.532|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+adau1761_codec/codec_clock_gen/clkout0|    1.622|         |         |         |
+clk                                   |    4.224|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.31 secs
+ 
+--> 
+
+Total memory usage is 292780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  232 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

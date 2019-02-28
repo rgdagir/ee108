@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/02/lab3/master_fsm_tb_isim_beh.exe" -prj "Z:/groups/02/lab3/master_fsm_tb_beh.prj" "work.master_fsm_tb" "work.glbl" 

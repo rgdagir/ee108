@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o Z:/groups/02/lab4/song_reader_tb_isim_beh.exe -prj Z:/groups/02/lab4/song_reader_tb_beh.prj work.song_reader_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "Z:/groups/02/lab4/song_rom.v" into library work
+Analyzing Verilog file "Z:/groups/02/lab4/ff_lib.v" into library work
+Analyzing Verilog file "Z:/groups/02/lab4/song_reader.v" into library work
+WARNING:HDLCompiler:751 - "Z:/groups/02/lab4/song_reader.v" Line 34: Redeclaration of ansi port song_done is not allowed
+WARNING:HDLCompiler:329 - "Z:/groups/02/lab4/song_reader.v" Line 83: Target <song_done> of concurrent assignment or output port connection should be a net type.
+Analyzing Verilog file "Z:/groups/02/lab4/song_reader_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "Z:/groups/02/lab4/song_reader.v" Line 83: Target <song_done> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Fuse Memory Usage: 104748 KB
+Fuse CPU Usage: 654 ms
+Compiling module song_rom
+Compiling module dffr(WIDTH=3)
+Compiling module dffr(WIDTH=5)
+Compiling module song_reader
+Compiling module song_reader_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable Z:/groups/02/lab4/song_reader_tb_isim_beh.exe
+Fuse Memory Usage: 128924 KB
+Fuse CPU Usage: 811 ms

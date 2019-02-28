@@ -1,0 +1,10 @@
+Command line:
+   note_player_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63868
+
+Sun Feb 10 18:23:45 2019
+
+
+ Elaboration Time: 0.421203 sec

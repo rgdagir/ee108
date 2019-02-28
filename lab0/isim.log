@@ -1,0 +1,20 @@
+ISim log file
+Running: Z:\groups\02\lab0\lab0_top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/groups/02/lab0/lab0_top_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Output is 1000, we expected 1000
+Output is 0110, we expected 0110
+Output is 0100, we expected 0100
+Output is 0001, we expected 0001
+Stopped at time : 25 ns :  in File "//afs/ir/class/ee108/groups/02/lab0/lab0_top_tb.v" Line 56 
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="lab3" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bicycle_fsm - bicycle_fsm/beat_32 - beat32</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bicycle_fsm - bicycle_fsm/fast_blinker - programmable_blinker</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/blnk - blinker</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/shf - shifter</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/tmr - timer</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bpu_down - button_press_unit</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bpu_right - button_press_unit</ClosedNode>
+         <ClosedNode>/lab3_top Z:|groups|02|lab3|lab3_top.v/bpu_up - button_press_unit</ClosedNode>
+         <ClosedNode>/programmable_blinker Z:|groups|02|lab3|programmable_blinker.v/blnk - blinker</ClosedNode>
+         <ClosedNode>/programmable_blinker Z:|groups|02|lab3|programmable_blinker.v/shf - shifter</ClosedNode>
+         <ClosedNode>/programmable_blinker Z:|groups|02|lab3|programmable_blinker.v/tmr - timer</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>flipflop - dffre (Z:/groups/02/lab3/ff_lib.v)</SelectedItem>
+         <SelectedItem>beat_32 - beat32 (Z:/groups/02/lab3/beat32.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>beat_32 - beat32 (Z:/groups/02/lab3/beat32.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000263000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001970000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>beat32.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/beat32_tb Z:|groups|02|lab3|beat32_tb.v</ClosedNode>
+         <ClosedNode>/beat32_tb Z:|groups|02|lab3|beat32_tb.v/bt2 - beat32</ClosedNode>
+         <ClosedNode>/blinker Z:|groups|02|lab3|blinker.v</ClosedNode>
+         <ClosedNode>/blinker_tb Z:|groups|02|lab3|blinker_tb.v</ClosedNode>
+         <ClosedNode>/button_press_unit Z:|groups|02|lab3|button_press_unit.v</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/beat_32 - beat32</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/fast_blinker - programmable_blinker</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/fast_blinker - programmable_blinker/blnk - blinker</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/fast_blinker - programmable_blinker/shf - shifter</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/fast_blinker - programmable_blinker/tmr - timer</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/mastery - master_fsm</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/blnk - blinker</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/shf - shifter</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/timer - timer</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bicycle_fsm - bicycle_fsm/slow_blinker - programmable_blinker/tmr - timer</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bpu_down - button_press_unit</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bpu_right - button_press_unit</ClosedNode>
+         <ClosedNode>/lab3_top_tb Z:|groups|02|lab3|lab3_top_tb.v/dut - lab3_top/bpu_up - button_press_unit</ClosedNode>
+         <ClosedNode>/master_fsm Z:|groups|02|lab3|master_fsm.v</ClosedNode>
+         <ClosedNode>/master_fsm_tb Z:|groups|02|lab3|master_fsm_tb.v/test_master - master_fsm</ClosedNode>
+         <ClosedNode>/programmable_blinker_tb Z:|groups|02|lab3|programmable_blinker_tb.v</ClosedNode>
+         <ClosedNode>/shifter_tb Z:|groups|02|lab3|shifter_tb.v</ClosedNode>
+         <ClosedNode>/timer_tb Z:|groups|02|lab3|timer_tb.v/beat_32 - beat32</ClosedNode>
+         <ClosedNode>/timer_tb Z:|groups|02|lab3|timer_tb.v/timer - timer</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cf0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000155000000010000000100000000000000000000000064ffffffff000000810000000000000001000001550000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+</Project>

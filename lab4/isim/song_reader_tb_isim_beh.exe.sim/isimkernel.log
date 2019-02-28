@@ -1,0 +1,30 @@
+Command line:
+   song_reader_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65170
+
+Mon Feb 11 10:35:32 2019
+
+
+ Elaboration Time: 0.187201 sec
+
+ Current Memory Usage: 656.437 Meg
+
+ Total Signals          : 38
+ Total Nets             : 1604
+ Total Signal Drivers   : 148
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 155
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 1784
+In process song_reader.vCont_83_4 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 1.40401 sec
+
+ Current Memory Usage: 697.758 Meg
+
+Mon Feb 11 10:36:01 2019
+

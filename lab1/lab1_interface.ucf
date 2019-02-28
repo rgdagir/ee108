@@ -1,0 +1,3 @@
+# Don't trim these nets even though they're not
+# connected to anything (yet)
+NET "*" S;

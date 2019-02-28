@@ -1,0 +1,29 @@
+Command line:
+   length_finder_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52937
+
+Wed Jan 23 10:19:16 2019
+
+
+ Elaboration Time: 0.140402 sec
+
+ Current Memory Usage: 655.368 Meg
+
+ Total Signals          : 30
+ Total Nets             : 109
+ Total Signal Drivers   : 19
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 23
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 264
+Total Line Count : 66
+
+ Total Simulation Time: 0.234002 sec
+
+ Current Memory Usage: 656.417 Meg
+
+Wed Jan 23 10:21:25 2019
+

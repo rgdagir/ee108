@@ -1,0 +1,894 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: lab2_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab2_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab2_top"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg484
+
+---- Source Options
+Top Module Name                    : lab2_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\tcgrom.v" into library work
+Parsing module <tcgrom>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\shifter.v" into library work
+Parsing module <shifter>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v" into library work
+Parsing module <dff>.
+Parsing module <dffr>.
+Parsing module <dffre>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\big_number_first.v" into library work
+Parsing module <big_number_first>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\fpa_vga_driver.v" into library work
+Parsing verilog file "dvi_defines.v" included at line 9.
+Parsing module <fpa_vga_driver>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\float_add.v" into library work
+Parsing module <float_add>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" into library work
+Parsing module <lab2_top>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab02\i2c_sender.vhd" into library work
+Parsing entity <i2c_sender>.
+Parsing architecture <Behavioral> of entity <i2c_sender>.
+Parsing VHDL file "\\afs\ir\class\ee108\groups\02\lab02\zedboard_hdmi.vhd" into library work
+Parsing entity <zedboard_hdmi>.
+Parsing architecture <Behavioral> of entity <zedboard_hdmi>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lab2_top>.
+
+Elaborating module <float_add>.
+
+Elaborating module <big_number_first>.
+
+Elaborating module <shifter>.
+
+Elaborating module <adder>.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\float_add.v" Line 30: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <dff(WIDTH=8)>.
+
+Elaborating module <dffre(WIDTH=8)>.
+
+Elaborating module <dff(WIDTH=27)>.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 132: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 133: Result of 32-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <dff(WIDTH=21)>.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 158: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 159: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 160: Result of 32-bit expression is truncated to fit in 8-bit target.
+Going to vhdl side to elaborate module zedboard_hdmi
+
+Elaborating entity <zedboard_hdmi> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "\\afs\ir\class\ee108\groups\02\lab02\zedboard_hdmi.vhd" Line 62: Using initial value '1' for hsyncactive since it is never assigned
+
+Elaborating entity <i2c_sender> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <dff(WIDTH=11)>.
+
+Elaborating module <fpa_vga_driver>.
+
+Elaborating module <tcgrom>.
+
+Elaborating module <dff(WIDTH=6)>.
+WARNING:HDLCompiler:189 - "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v" Line 218: Size mismatch in connection of port <YPos>. Formal port size is 10-bit while actual signal size is 11-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab2_top>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\lab2_top.v".
+    Found 24-bit register for signal <converted>.
+    Found 18-bit subtractor for signal <GND_1_o_GND_1_o_sub_14_OUT> created at line 132.
+    Found 32-bit subtractor for signal <n0109> created at line 132.
+    Found 27-bit adder for signal <led_counter[26]_GND_1_o_add_0_OUT> created at line 102.
+    Found 19-bit adder for signal <n0103[18:0]> created at line 131.
+    Found 20-bit adder for signal <n0106[19:0]> created at line 131.
+    Found 21-bit adder for signal <n0094> created at line 131.
+    Found 32-bit adder for signal <n0053> created at line 132.
+    Found 32-bit subtractor for signal <_n0116> created at line 133.
+    Found 32-bit adder for signal <_n0117> created at line 133.
+    Found 32-bit adder for signal <n0054> created at line 133.
+    Found 6x8-bit multiplier for signal <PWR_1_o_b[7]_MuLt_5_OUT> created at line 131.
+    Found 10x8-bit multiplier for signal <PWR_1_o_g[7]_MuLt_6_OUT> created at line 131.
+    Found 8x8-bit multiplier for signal <PWR_1_o_r[7]_MuLt_8_OUT> created at line 131.
+    Found 9x8-bit multiplier for signal <PWR_1_o_b[7]_MuLt_11_OUT> created at line 132.
+    Found 9x8-bit multiplier for signal <PWR_1_o_g[7]_MuLt_12_OUT> created at line 132.
+    Found 7x8-bit multiplier for signal <PWR_1_o_r[7]_MuLt_14_OUT> created at line 132.
+    Found 32x8-bit multiplier for signal <n0070> created at line 133.
+    Found 9x8-bit multiplier for signal <PWR_1_o_g[7]_MuLt_18_OUT> created at line 133.
+    Found 9x8-bit multiplier for signal <PWR_1_o_r[7]_MuLt_20_OUT> created at line 133.
+    Found 21-bit comparator lessequal for signal <n0024> created at line 158
+    Found 21-bit comparator lessequal for signal <n0028> created at line 159
+    Summary:
+	inferred   9 Multiplier(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <lab2_top> synthesized.
+
+Synthesizing Unit <float_add>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\float_add.v".
+    Found 3-bit subtractor for signal <distance> created at line 7.
+    Found 3-bit adder for signal <aOut[7]_GND_2_o_add_3_OUT> created at line 30.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <float_add> synthesized.
+
+Synthesizing Unit <big_number_first>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\big_number_first.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 8
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <big_number_first> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\shifter.v".
+    Found 5-bit shifter logical right for signal <out> created at line 5
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <shifter> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\adder.v".
+    Found 6-bit adder for signal <n0006> created at line 6.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <dff_1>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 8
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <dff_1> synthesized.
+
+Synthesizing Unit <dffre>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 8
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <dffre> synthesized.
+
+Synthesizing Unit <dff_2>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 27
+    Found 27-bit register for signal <q>.
+    Summary:
+	inferred  27 D-type flip-flop(s).
+Unit <dff_2> synthesized.
+
+Synthesizing Unit <dff_3>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 21
+    Found 21-bit register for signal <q>.
+    Summary:
+	inferred  21 D-type flip-flop(s).
+Unit <dff_3> synthesized.
+
+Synthesizing Unit <zedboard_hdmi>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\zedboard_hdmi.vhd".
+WARNING:Xst:647 - Input <hdmi_int> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <hdmi_clk_bits>.
+    Found 16-bit register for signal <hdmi_d>.
+    Found 1-bit register for signal <hdmi_de>.
+    Found 1-bit register for signal <hdmi_hsync>.
+    Found 1-bit register for signal <hdmi_vsync>.
+    Found 1-bit register for signal <blanking>.
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <hsync>.
+    Found 11-bit register for signal <hcounter>.
+    Found 11-bit register for signal <vcounter>.
+    Found 11-bit register for signal <ypos>.
+    Found 11-bit register for signal <xpos>.
+    Found 1-bit register for signal <edge>.
+    Found 11-bit adder for signal <vcounter[10]_GND_20_o_add_25_OUT> created at line 1241.
+    Found 11-bit adder for signal <hcounter[10]_GND_20_o_add_28_OUT> created at line 1241.
+    Found 11-bit comparator lessequal for signal <n0021> created at line 165
+    Found 11-bit comparator lessequal for signal <n0023> created at line 167
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  69 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <zedboard_hdmi> synthesized.
+
+Synthesizing Unit <i2c_sender>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\i2c_sender.vhd".
+WARNING:Xst:2999 - Signal 'reg_value_pairs', unconnected in block 'i2c_sender', is tied to its initial value.
+    Found 64x16-bit single-port Read Only RAM <Mram_reg_value_pairs> for signal <reg_value_pairs>.
+    Found 8-bit register for signal <address>.
+    Found 29-bit register for signal <clk_first_quarter>.
+    Found 29-bit register for signal <clk_last_quarter>.
+    Found 29-bit register for signal <busy_sr>.
+    Found 9-bit register for signal <divider>.
+    Found 8-bit register for signal <initial_pause>.
+    Found 1-bit register for signal <finished>.
+    Found 29-bit register for signal <tristate_sr>.
+    Found 29-bit register for signal <data_sr>.
+    Found 16-bit register for signal <reg_value>.
+    Found 8-bit adder for signal <initial_pause[7]_GND_23_o_add_9_OUT> created at line 1241.
+    Found 8-bit adder for signal <address[7]_GND_23_o_add_12_OUT> created at line 1241.
+    Found 9-bit adder for signal <divider[8]_GND_23_o_add_43_OUT> created at line 1241.
+    Found 1-bit 4-to-1 multiplexer for signal <sioc> created at line 98.
+    Found 1-bit tristate buffer for signal <siod> created at line 89
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 187 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <i2c_sender> synthesized.
+
+Synthesizing Unit <dff_4>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 11
+    Found 11-bit register for signal <q>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <dff_4> synthesized.
+
+Synthesizing Unit <fpa_vga_driver>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\fpa_vga_driver.v".
+    Found 32x6-bit Read Only RAM for signal <XPos[10]_PWR_21_o_wide_mux_0_OUT>
+    Found 1-bit 8-to-1 multiplexer for signal <color> created at line 177.
+    Found 5-bit comparator greater for signal <XPos[10]_GND_29_o_LessThan_2_o> created at line 77
+    Found 8-bit comparator greater for signal <result[7]_aIn[7]_LessThan_52_o> created at line 137
+    Found 8-bit comparator greater for signal <result[7]_bIn[7]_LessThan_53_o> created at line 137
+    Found 5-bit comparator lessequal for signal <n0073> created at line 169
+    Found 5-bit comparator lessequal for signal <n0075> created at line 170
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <fpa_vga_driver> synthesized.
+
+Synthesizing Unit <tcgrom>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\tcgrom.v".
+    Found 512x8-bit Read Only RAM for signal <data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <tcgrom> synthesized.
+
+Synthesizing Unit <dff_5>.
+    Related source file is "\\afs\ir\class\ee108\groups\02\lab02\ff_lib.v".
+        WIDTH = 6
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <dff_5> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x6-bit single-port Read Only RAM                    : 1
+ 512x8-bit single-port Read Only RAM                   : 1
+ 64x16-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 9
+ 10x8-bit multiplier                                   : 1
+ 32x8-bit multiplier                                   : 1
+ 8x6-bit multiplier                                    : 1
+ 8x7-bit multiplier                                    : 1
+ 8x8-bit multiplier                                    : 1
+ 9x8-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 18
+ 11-bit adder                                          : 2
+ 18-bit subtractor                                     : 1
+ 19-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 38
+ 1-bit register                                        : 8
+ 11-bit register                                       : 6
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 21-bit register                                       : 3
+ 24-bit register                                       : 1
+ 27-bit register                                       : 1
+ 29-bit register                                       : 5
+ 6-bit register                                        : 4
+ 8-bit register                                        : 6
+ 9-bit register                                        : 1
+# Comparators                                          : 10
+ 11-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 26
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 29-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 6
+ 6-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 4
+ 9-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 5-bit shifter logical right                           : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <hdmi_clk_bits_0> in Unit <hdmi> is equivalent to the following FF/Latch, which will be removed : <hdmi_clk_bits_1> 
+WARNING:Xst:2677 - Node <q_0> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_1> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_2> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_3> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_4> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_5> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_6> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_7> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_8> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <q_9> of sequential type is unconnected in block <cr_dff>.
+WARNING:Xst:2677 - Node <ypos_10> of sequential type is unconnected in block <hdmi>.
+WARNING:Xst:2677 - Node <q_10> of sequential type is unconnected in block <y_dff>.
+
+Synthesizing (advanced) Unit <fpa_vga_driver>.
+INFO:Xst:3231 - The small RAM <Mram_XPos[10]_PWR_21_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 6-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <XPos<10:6>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <tcgrom/Mram_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <tcgrom_reg/q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(char_selection_q,YPos<5:3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <tcgrom_q>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <fpa_vga_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_sender>.
+The following registers are absorbed into counter <address>: 1 register on signal <address>.
+The following registers are absorbed into counter <initial_pause>: 1 register on signal <initial_pause>.
+The following registers are absorbed into counter <divider>: 1 register on signal <divider>.
+INFO:Xst:3231 - The small RAM <Mram_reg_value_pairs> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <i2c_sender> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lab2_top>.
+The following registers are absorbed into counter <led_div/q>: 1 register on signal <led_div/q>.
+	Multiplier <Mmult_PWR_1_o_r[7]_MuLt_8_OUT> in block <lab2_top> and adder/subtractor <Madd_n0106[19:0]> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_r[7]_MuLt_8_OUT>.
+	Multiplier <Mmult_PWR_1_o_b[7]_MuLt_5_OUT> in block <lab2_top> and adder/subtractor <Madd_n0103[18:0]> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_b[7]_MuLt_5_OUT>.
+	Multiplier <Mmult_PWR_1_o_r[7]_MuLt_14_OUT> in block <lab2_top> and adder/subtractor <Msub_n0109_Madd> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_r[7]_MuLt_14_OUT>.
+	Multiplier <Mmult_PWR_1_o_r[7]_MuLt_20_OUT> in block <lab2_top> and adder/subtractor <Madd__n0117_Madd> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_r[7]_MuLt_20_OUT>.
+	Multiplier <Mmult_PWR_1_o_b[7]_MuLt_11_OUT> in block <lab2_top> and adder/subtractor <Msub_GND_1_o_GND_1_o_sub_14_OUT> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_b[7]_MuLt_11_OUT>.
+	Multiplier <Mmult_PWR_1_o_g[7]_MuLt_18_OUT> in block <lab2_top> and adder/subtractor <Msub__n0116_Madd> in block <lab2_top> are combined into a MAC<Maddsub_PWR_1_o_g[7]_MuLt_18_OUT>.
+Unit <lab2_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <zedboard_hdmi>.
+The following registers are absorbed into counter <hcounter>: 1 register on signal <hcounter>.
+The following registers are absorbed into counter <vcounter>: 1 register on signal <vcounter>.
+Unit <zedboard_hdmi> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x6-bit single-port distributed Read Only RAM        : 1
+ 512x8-bit single-port block Read Only RAM             : 1
+ 64x16-bit single-port distributed Read Only RAM       : 1
+# MACs                                                 : 6
+ 8x6-to-19-bit MAC                                     : 1
+ 8x7-to-21-bit MAC                                     : 1
+ 8x8-to-20-bit MAC                                     : 1
+ 9x8-to-18-bit MAC                                     : 1
+ 9x8-to-21-bit MAC                                     : 2
+# Multipliers                                          : 3
+ 10x8-bit multiplier                                   : 1
+ 32x8-bit multiplier                                   : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 21-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 2
+ 27-bit up counter                                     : 1
+ 8-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 366
+ Flip-Flops                                            : 366
+# Comparators                                          : 10
+ 11-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 25
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 29-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 6
+ 6-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 4
+# Logic shifters                                       : 1
+ 5-bit shifter logical right                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <hdmi_clk_bits_0> in Unit <zedboard_hdmi> is equivalent to the following FF/Latch, which will be removed : <hdmi_clk_bits_1> 
+WARNING:Xst:1710 - FF/Latch <hdmi_d_0> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_1> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_2> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_3> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_4> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_5> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_6> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_d_7> (without init value) has a constant value of 0 in block <zedboard_hdmi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clk_last_quarter_0> has a constant value of 1 in block <i2c_sender>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tristate_sr_0> has a constant value of 0 in block <i2c_sender>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <address_6> of sequential type is unconnected in block <i2c_sender>.
+WARNING:Xst:2677 - Node <address_7> of sequential type is unconnected in block <i2c_sender>.
+INFO:Xst:1901 - Instance PLLE2_BASE_inst in unit zedboard_hdmi of type PLLE2_BASE has been replaced by PLLE2_ADV
+
+Optimizing unit <dff_3> ...
+
+Optimizing unit <dff_4> ...
+
+Optimizing unit <lab2_top> ...
+
+Optimizing unit <fpa_vga_driver> ...
+
+Optimizing unit <float_add> ...
+WARNING:Xst:2677 - Node <hdmi/ypos_10> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_19> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_18> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_9> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_8> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_7> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_6> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_5> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_4> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_3> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_2> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_1> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <cr_dff/q_0> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <y_dff/q_10> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:1293 - FF/Latch <hdmi/Inst_i2c_sender/divider_8> has a constant value of 0 in block <lab2_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ye_dff/q_20> (without init value) has a constant value of 0 in block <lab2_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ye_dff/q_19> (without init value) has a constant value of 0 in block <lab2_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ye_dff/q_18> (without init value) has a constant value of 0 in block <lab2_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_0> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_1> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_2> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_3> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_4> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_5> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_6> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_7> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_8> is unconnected in block <lab2_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ye_dff/q_9> is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_28> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_27> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_26> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_25> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_24> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_23> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_22> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_21> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_20> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_19> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_18> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_17> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_16> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_15> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_14> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_13> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_12> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_11> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_10> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_9> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_8> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_7> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_6> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_5> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_4> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_3> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_2> of sequential type is unconnected in block <lab2_top>.
+WARNING:Xst:2677 - Node <hdmi/Inst_i2c_sender/clk_last_quarter_1> of sequential type is unconnected in block <lab2_top>.
+INFO:Xst:2261 - The FF/Latch <hdmi/Inst_i2c_sender/data_sr_0> in Unit <lab2_top> is equivalent to the following FF/Latch, which will be removed : <hdmi/Inst_i2c_sender/clk_first_quarter_0> 
+INFO:Xst:3203 - The FF/Latch <hdmi/Inst_i2c_sender/data_sr_0> in Unit <lab2_top> is the opposite to the following FF/Latch, which will be removed : <hdmi/Inst_i2c_sender/tristate_sr_1> 
+INFO:Xst:3203 - The FF/Latch <hdmi/Inst_i2c_sender/data_sr_1> in Unit <lab2_top> is the opposite to the following FF/Latch, which will be removed : <hdmi/Inst_i2c_sender/tristate_sr_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab2_top, actual ratio is 1.
+INFO:Xst:2260 - The FF/Latch <hdmi/edge> in Unit <lab2_top> is equivalent to the following FF/Latch : <hdmi/hdmi_clk_bits_0> 
+INFO:Xst:2261 - The FF/Latch <hdmi/edge> in Unit <lab2_top> is equivalent to the following FF/Latch, which will be removed : <hdmi/hdmi_clk_bits_0> 
+
+Final Macro Processing ...
+
+Processing Unit <lab2_top> :
+	Found 2-bit shift register for signal <converted_16>.
+	Found 2-bit shift register for signal <converted_17>.
+	Found 2-bit shift register for signal <converted_18>.
+	Found 2-bit shift register for signal <converted_19>.
+	Found 2-bit shift register for signal <converted_20>.
+Unit <lab2_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 325
+ Flip-Flops                                            : 325
+# Shift Registers                                      : 5
+ 2-bit shift register                                  : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab2_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 827
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 77
+#      LUT2                        : 90
+#      LUT3                        : 158
+#      LUT4                        : 19
+#      LUT5                        : 48
+#      LUT6                        : 99
+#      MUXCY                       : 163
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 158
+# FlipFlops/Latches                : 331
+#      FD                          : 123
+#      FDE                         : 77
+#      FDR                         : 9
+#      FDRE                        : 89
+#      FDSE                        : 32
+#      ODDR                        : 1
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+# Shift Registers                  : 5
+#      SRLC16E                     : 5
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 39
+#      IBUF                        : 13
+#      OBUF                        : 25
+#      OBUFT                       : 1
+# DSPs                             : 9
+#      DSP48E1                     : 9
+# Others                           : 1
+#      PLLE2_ADV                   : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             331  out of  106400     0%  
+ Number of Slice LUTs:                  504  out of  53200     0%  
+    Number used as Logic:               499  out of  53200     0%  
+    Number used as Memory:                5  out of  17400     0%  
+       Number used as SRL:                5
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    574
+   Number with an unused Flip Flop:     243  out of    574    42%  
+   Number with an unused LUT:            70  out of    574    12%  
+   Number of fully used LUT-FF pairs:   261  out of    574    45%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                          40
+ Number of bonded IOBs:                  39  out of    200    19%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    140     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      9  out of    220     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100                            | PLLE2_ADV:CLKOUT0      | 286   |
+clk_100                            | PLLE2_ADV:CLKOUT1      | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------+-------------------------------+-------+
+Control Signal                                        | Buffer(FF name)               | Load  |
+------------------------------------------------------+-------------------------------+-------+
+Mmult_PWR_1_o_g[7]_MuLt_12_OUT_Madd3_lut<9>(XST_GND:G)| NONE(fpa_vga_tcgrom/Mram_data)| 2     |
+------------------------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.330ns (Maximum Frequency: 157.985MHz)
+   Minimum input arrival time before clock: 0.989ns
+   Maximum output required time after clock: 0.902ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100'
+  Clock period: 6.330ns (frequency: 157.985MHz)
+  Total number of paths / destination ports: 922716 / 802
+-------------------------------------------------------------------------
+Delay:               0.703ns (Levels of Logic = 1)
+  Source:            converted_23 (FF)
+  Destination:       hdmi/hdmi_d_15 (FF)
+  Source Clock:      clk_100 rising
+  Destination Clock: clk_100 rising 1.8X
+
+  Data Path: converted_23 to hdmi/hdmi_d_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.232   0.428  converted_23 (converted_23)
+     LUT5:I2->O            1   0.043   0.000  hdmi/Mmux_Cb[15]_Y[15]_mux_16_OUT61 (hdmi/Cb[15]_Y[15]_mux_16_OUT<15>)
+     FDR:D                    -0.001          hdmi/hdmi_d_15
+    ----------------------------------------
+    Total                      0.703ns (0.275ns logic, 0.428ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100'
+  Total number of paths / destination ports: 64 / 48
+-------------------------------------------------------------------------
+Offset:              0.989ns (Levels of Logic = 2)
+  Source:            btn_left (PAD)
+  Destination:       bin_reg/q_7 (FF)
+  Destination Clock: clk_100 rising
+
+  Data Path: btn_left to bin_reg/q_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.343  btn_left_IBUF (btn_left_IBUF)
+     LUT2:I0->O           16   0.043   0.348  reset1 (reset)
+     FDRE:R                    0.255          bin_reg/q_0
+    ----------------------------------------
+    Total                      0.989ns (0.298ns logic, 0.691ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100'
+  Total number of paths / destination ports: 20 / 18
+-------------------------------------------------------------------------
+Offset:              0.902ns (Levels of Logic = 2)
+  Source:            hdmi/Inst_i2c_sender/clk_first_quarter_28 (FF)
+  Destination:       hdmi_scl (PAD)
+  Source Clock:      clk_100 rising
+
+  Data Path: hdmi/Inst_i2c_sender/clk_first_quarter_28 to hdmi_scl
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.232   0.347  hdmi/Inst_i2c_sender/clk_first_quarter_28 (hdmi/Inst_i2c_sender/clk_first_quarter_28)
+     LUT2:I0->O            1   0.043   0.279  hdmi/Inst_i2c_sender/Mmux_sioc11 (hdmi_scl_OBUF)
+     OBUF:I->O                 0.000          hdmi_scl_OBUF (hdmi_scl)
+    ----------------------------------------
+    Total                      0.902ns (0.275ns logic, 0.627ns route)
+                                       (30.5% logic, 69.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |    5.925|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.97 secs
+ 
+--> 
+
+Total memory usage is 342188 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

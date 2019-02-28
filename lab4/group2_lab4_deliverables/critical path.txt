@@ -1,0 +1,7 @@
+-> Slack (setup path):     0.640ns (requirement - (data path - clock path skew + uncertainty))
+-> Source:               adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (FF)
+-> Destination:          music_player/note_player/sin_read/rom_flipflop/q_16 (FF)
+
+-> Maximum Data Path at Fast Process Corner: adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample to music_player/note_player/sin_read/rom_flipflop/q_16
+
+Yes. The path comes from the codec/audio interface up to the music_player and then down to the most basic part of our logic, our flip flop within the sine_reader.

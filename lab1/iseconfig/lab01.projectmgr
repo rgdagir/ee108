@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="lab01" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/bpu1 - button_press_unit</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/bpu2 - button_press_unit</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/bpu3 - button_press_unit</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/bpu4 - button_press_unit</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/bpu5 - button_press_unit</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/char_dn_pulser - one_pulse</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/char_up_pulser - one_pulse</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/hdmi - zedboard_hdmi - Behavioral</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/pass_box - input_box</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface/usr_box - input_box</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash0 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash1 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash2 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash3 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash4 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash5 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash6 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher/hash7 - hash_round</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>hashy - hasher (Z:/groups/02/lab1/hasher.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>hashy - hasher (Z:/groups/02/lab1/hasher.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000252000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001860000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>arbiter.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/arbiter_tb Z:|groups|02|lab1|arbiter_tb.v</ClosedNode>
+         <ClosedNode>/cam_tb Z:|groups|02|lab1|cam_tb.v</ClosedNode>
+         <ClosedNode>/dvi_controller_top Z:|groups|02|lab1|dvi_controller_top.v</ClosedNode>
+         <ClosedNode>/encoder_tb Z:|groups|02|lab1|encoder_tb.v</ClosedNode>
+         <ClosedNode>/hash_rom_tb Z:|groups|02|lab1|hash_rom_tb.v</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut0 - hash_round/roty - rotator</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut1 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut2 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut3 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut4 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut5 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut6 - hash_round</ClosedNode>
+         <ClosedNode>/hash_round_tb Z:|groups|02|lab1|hash_round_tb.v/dut7 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash0 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash1 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash2 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash3 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash4 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash5 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash6 - hash_round</ClosedNode>
+         <ClosedNode>/hasher_tb Z:|groups|02|lab1|hasher_tb.v/dut - hasher/hash7 - hash_round</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/interface - lab1_interface</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/camy - cam</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/hashy - hasher</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/lengthy - length_finder</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/lengthy_pass - length_finder</ClosedNode>
+         <ClosedNode>/lab1_top Z:|groups|02|lab1|lab1_top.v/user_verifier - verifier/lengthy_user - length_finder</ClosedNode>
+         <ClosedNode>/length_finder_tb Z:|groups|02|lab1|length_finder_tb.v</ClosedNode>
+         <ClosedNode>/rotator_tb Z:|groups|02|lab1|rotator_tb.v</ClosedNode>
+         <ClosedNode>/verifier_tb Z:|groups|02|lab1|verifier_tb.v/dut - verifier</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>hash_rom_tb (Z:/groups/02/lab1/hash_rom_tb.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>hash_rom_tb (Z:/groups/02/lab1/hash_rom_tb.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

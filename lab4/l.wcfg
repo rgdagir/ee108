@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/groups/02/lab4/mcu_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mcu_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/mcu_tb/play" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">play</obj_property>
+      <obj_property name="ObjectShortName">play</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/reset_player" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_player</obj_property>
+      <obj_property name="ObjectShortName">reset_player</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/song" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">song[1:0]</obj_property>
+      <obj_property name="ObjectShortName">song[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/play_button" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">play_button</obj_property>
+      <obj_property name="ObjectShortName">play_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/next_button" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">next_button</obj_property>
+      <obj_property name="ObjectShortName">next_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcu_tb/song_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">song_done</obj_property>
+      <obj_property name="ObjectShortName">song_done</obj_property>
+   </wvobject>
+</wave_config>

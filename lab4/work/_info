@@ -1,0 +1,385 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\groups\02\lab4
+vac97_if
+Z1 !s100 C2MBD?jlL9fFVM87eQFoj0
+Z2 IU9WjPFZnRGn=HMSRO5TOU0
+Z3 Vfze]I?nlk>0bEMcTL74XK1
+Z4 dZ:\groups\02\lab4
+Z5 w1455088229
+Z6 8ac97_if_isim.v
+Z7 Fac97_if_isim.v
+L0 6
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|ac97_if_isim.v|
+o-O0
+Z10 !s108 1550347267.047000
+Z11 !s107 ac97_if_isim.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vbeat_generator
+Z12 !s100 ca`NNFRX=?NX9L<d4a=c?3
+Z13 IAHlD?[P3W_z:>IgF15N:j1
+Z14 V:bSWRF`TQZ;JFdfYSQh6c0
+R4
+Z15 w1549836934
+Z16 8beat_generator.v
+Z17 Fbeat_generator.v
+L0 1
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|beat_generator.v|
+o-O0
+Z19 !s108 1550347265.985000
+Z20 !s107 beat_generator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcodec_conditioner
+Z21 !s100 E[GN_nA5n36XF<A16?0aI0
+Z22 I`d^TbMTXZb<BY4R2PTK6T2
+Z23 VI<TdK=::REjBz5HLcXMV01
+R4
+Z24 w1454627805
+Z25 8codec_conditioner.v
+Z26 Fcodec_conditioner.v
+L0 34
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|codec_conditioner.v|
+o-O0
+Z28 !s108 1550347265.485000
+Z29 !s107 codec_conditioner.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff
+Z30 !s100 1MbWCgEoo@?Q^YWc=DS;Z1
+Z31 IlK?3XKSJT<f`=A8fc6eB^0
+Z32 V1]_Ac7cGMRO`Z02@2;TiP0
+R4
+R24
+Z33 8ff_lib.v
+Z34 Fff_lib.v
+L0 3
+R8
+r1
+31
+Z35 !s108 1550347306.273000
+Z36 !s107 ff_lib.v|
+Z37 !s90 -reportprogress|300|ff_lib.v|
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vdffr
+Z38 !s100 Moh3FSzD4]QWn=^k5?hSB0
+Z39 ILi=P=Si:9Go:4nRS2:IIa1
+Z40 VRhFDD@?0a_a:O^US4de?G3
+R4
+R24
+R33
+R34
+L0 16
+R8
+r1
+31
+R35
+R36
+R37
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vdffre
+Z41 !s100 U_M_caXTimYXYK8RDENUC0
+Z42 IWOzS?T?6L2_CNL5_SU@@m2
+Z43 VCT6F_aS8Aj0ga@=]ZD:;`2
+R4
+R24
+R33
+R34
+L0 34
+R8
+r1
+31
+R35
+R36
+R37
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vfrequency_rom
+Z44 !s100 FF4kXcXPbSdG6hOi[18OI0
+Z45 IdIoG45J<41m;?XJ9==eDJ2
+Z46 VPg6?aM=1YG9_Djb=X[DGW3
+R4
+R24
+Z47 8frequency_rom.v
+Z48 Ffrequency_rom.v
+L0 4
+R8
+r1
+31
+Z49 !s90 -reportprogress|300|frequency_rom.v|
+o-O0
+Z50 !s108 1550347263.472000
+Z51 !s107 frequency_rom.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vglbl
+!i10b 1
+Z52 !s100 4BUMBVf6Tzc2Z4KLdBM[:3
+Z53 I<Xd30d>Z1j=m1HPhAXJD_2
+Z54 VM[9mS]S:KA1i4VeCMX35[3
+R4
+Z55 w1381677520
+Z56 8C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+Z57 FC:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R8
+r1
+!s85 0
+31
+!s108 1550347308.114000
+!s107 C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+Z58 !s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+!s101 -O0
+o-O0
+vmcu
+Z59 !s100 EB2YTb0V1Zfh4a5MLBPRk3
+Z60 I6Xl33>4]A4BN:a>jkhHM10
+Z61 Vfb<;UcK78^Q=l]4l^e^^[3
+R4
+Z62 w1550108082
+Z63 8mcu.v
+Z64 Fmcu.v
+L0 5
+R8
+r1
+31
+Z65 !s90 -reportprogress|300|mcu.v|
+o-O0
+Z66 !s108 1550347265.017000
+Z67 !s107 mcu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmcu_tb
+Z68 I6NI=@ilCMIgT_f]k6cQ@W2
+Z69 VBl>53LX53P>3;0>0gY60[3
+R4
+Z70 w1550183173
+Z71 8mcu_tb.v
+Z72 Fmcu_tb.v
+L0 2
+R8
+r1
+31
+Z73 !s90 -reportprogress|300|mcu_tb.v|
+o-O0
+Z74 !s100 QkedCTO_Ggki_cTm[b8:@1
+Z75 !s108 1550183190.950000
+Z76 !s107 mcu_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmusic_player
+Z77 !s100 J[Demdh0e1SJ>8=cj7Xd`2
+Z78 I^Tej3S0gZPa70Uz1TiXmN2
+Z79 VmJg2hXE5ooB:ZcRAfk[Dg2
+R4
+R24
+Z80 8music_player.v
+Z81 Fmusic_player.v
+L0 9
+R8
+r1
+31
+Z82 !s90 -reportprogress|300|music_player.v|
+o-O0
+Z83 !s108 1550347266.453000
+Z84 !s107 music_player.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmusic_player_tb
+Z85 !s100 M?k72kHh[BDI56=iJmYn`1
+Z86 Iz0km?gnd`4iIh`TbE2^iT1
+Z87 V4WgUmY6W?H70J2UUS@59S0
+R4
+Z88 w1550014938
+Z89 8music_player_tb.v
+Z90 Fmusic_player_tb.v
+L0 2
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|music_player_tb.v|
+o-O0
+Z92 !s108 1550347267.641000
+Z93 !s107 music_player_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnote_player
+Z94 !s100 Y`11CXk^7lWZ6i:aWJ_Jj0
+Z95 IkoziX:z61:=P]B1[;zIZC2
+Z96 VKEPi^3I8ohidK9RdRP7c_2
+R4
+Z97 w1550195499
+Z98 8note_player.v
+Z99 Fnote_player.v
+L0 1
+R8
+r1
+31
+Z100 !s90 -reportprogress|300|note_player.v|
+o-O0
+Z101 !s108 1550347264.486000
+Z102 !s107 note_player.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnote_player_tb
+Z103 IXYN2GG?hSC?FF?cL8XRZk1
+Z104 VGBT9:QUid79Vhh;bJ^@_i2
+R4
+Z105 w1550181900
+Z106 8note_player_tb.v
+Z107 Fnote_player_tb.v
+L0 2
+R8
+r1
+31
+Z108 !s90 -reportprogress|300|note_player_tb.v|
+o-O0
+Z109 !s100 7gFd2LHX^9GgPB<I``Eb?2
+Z110 !s108 1550181914.324000
+Z111 !s107 note_player_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsine_reader
+Z112 !s100 3lAlCj3BFTJP0hggm73[C1
+Z113 Ijl@@nDkzYzG<5dQS1Z>cU3
+Z114 VE9lMc<H`fYSC7dNS[n`a?2
+R4
+Z115 w1550347246
+Z116 8sine_reader.v
+Z117 Fsine_reader.v
+L0 7
+R8
+r1
+31
+Z118 !s90 -reportprogress|300|sine_reader.v|
+o-O0
+Z119 !s108 1550347307.256000
+Z120 !s107 sine_reader.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsine_reader_tb
+Z121 !s100 zdl;kO`Gn5OM3U]2;kOzP2
+Z122 I3mH>eRVnQ_^N`f0AJ9aed0
+Z123 V`58n[Lhg8M3omf4bkg0f41
+R4
+Z124 w1550108602
+Z125 8sine_reader_tb.v
+Z126 Fsine_reader_tb.v
+L0 2
+R8
+r1
+31
+Z127 !s90 -reportprogress|300|sine_reader_tb.v|
+o-O0
+!i10b 1
+!s85 0
+Z128 !s108 1550347307.708000
+Z129 !s107 sine_reader_tb.v|
+!s101 -O0
+vsine_rom
+Z130 !s100 UjGAKZ18_7ha78OAUTKb10
+Z131 I:C8dJaN@DLf;GCg8g:];E2
+Z132 V_NfNb9D889`K_AC6cX3X81
+R4
+R24
+Z133 8sine_rom.v
+Z134 Fsine_rom.v
+L0 1
+R8
+r1
+31
+Z135 !s90 -reportprogress|300|sine_rom.v|
+o-O0
+Z136 !s108 1550347305.727000
+Z137 !s107 sine_rom.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsong_reader
+Z138 !s100 Nfb3f^k;5ER^M>o5;zf0^1
+Z139 InYOLBViPS=0<zOW9Pe]=22
+Z140 V9bPnlkbROlTXd`V3mf>il1
+R4
+Z141 w1550197565
+Z142 8song_reader.v
+Z143 Fsong_reader.v
+L0 7
+R8
+r1
+31
+Z144 !s90 -reportprogress|300|song_reader.v|
+o-O0
+Z145 !s108 1550347263.955000
+Z146 !s107 song_reader.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsong_reader_tb
+Z147 I22S4KkHEbG4Mm<3gFniCj1
+Z148 VeRJbHO@ZH6:T:h;DREP6?0
+R4
+Z149 w1550121592
+Z150 8song_reader_tb.v
+Z151 Fsong_reader_tb.v
+L0 3
+R8
+r1
+31
+Z152 !s90 -reportprogress|300|song_reader_tb.v|
+o-O0
+Z153 !s100 Lol=RcLzDVl7fomJVSX:52
+Z154 !s108 1550121630.088000
+Z155 !s107 song_reader_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsong_rom
+Z156 !s100 Ba99:?62Y8EL5LU`n>V@43
+Z157 I9:L@lYTYM@kIDC9GXVg0P1
+Z158 V@eK?GA3985:Te?GE9hg`30
+R4
+Z159 w1550184469
+Z160 8song_rom.v
+Z161 Fsong_rom.v
+L0 6
+R8
+r1
+31
+Z162 !s90 -reportprogress|300|song_rom.v|
+o-O0
+Z163 !s108 1550347262.505000
+Z164 !s107 song_rom.v|
+!i10b 1
+!s85 0
+!s101 -O0

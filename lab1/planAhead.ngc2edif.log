@@ -1,0 +1,63 @@
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design lab1_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to lab1_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus interface/password<62 : 0> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/rom_out<21 : 0> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/hash<31 : 1> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_b[7]_MuLt_2_OUT_Madd_lut<13 : 0> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_b[7]_MuLt_2_OUT_Madd5_lut<12 : 1> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_r[7]_MuLt_5_OUT_Madd4_lut<11 : 3> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_b[7]_MuLt_2_OUT_Madd4_lut<10 : 3> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Mmult_PWR_19_o_g[7]_MuLt_3_OUT_Madd2_lut<12 : 6> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Mmult_PWR_19_o_g[7]_MuLt_9_OUT_Madd2_lut<12 : 3> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_r[7]_MuLt_5_OUT_Madd1_cy<14 : 5> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_b[7]_MuLt_2_OUT_Madd1_cy<9 : 2> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   interface/Maddsub_PWR_19_o_b[7]_MuLt_2_OUT_Madd1_lut<9 : 5> on block lab1_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus interface/Result<26 : 0> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus interface/pass_box/value<62 : 0> on
+   block lab1_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus interface/crblah_q<20 : 10> on block
+   lab1_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/camy/entry_matches<7 : 0>
+   on block lab1_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/hashy/final_state<31 : 0>
+   on block lab1_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/hashy/hash_state5<14 : 8>
+   on block lab1_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus user_verifier/hashy/hash_state4<15 : 8>
+   on block lab1_top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file lab1_top.edif ...
+ngc2edif: Total memory usage is 63308 kilobytes
+

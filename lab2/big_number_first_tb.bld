@@ -1,0 +1,722 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc zedboard_master_UCF_RevC_v2.ucf -bm adder.bmm -p
+xc7z020-clg484-3 big_number_first_tb.ngc big_number_first_tb.ngd
+
+Reading NGO file "Z:/groups/02/lab02/big_number_first_tb.ngc" ...
+Loading design module "Z:\groups\02\lab02/big_number_first_tb.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "zedboard_master_UCF_RevC_v2.ucf"
+...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET CLK_100       LOC = Y9   |>
+   [zedboard_master_UCF_RevC_v2.ucf(2)]: NET "CLK_100" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET CLK_100       LOC = Y9   |> [zedboard_master_UCF_RevC_v2.ucf(2)]' could
+   not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(2)]: NET "CLK_100" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_100" TNM_NET = clk_100;>
+   [zedboard_master_UCF_RevC_v2.ucf(3)]: NET "clk_100" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk_100 = PERIOD "clk_100"
+   10 ns HIGH 50%;> [zedboard_master_UCF_RevC_v2.ucf(4)]: Unable to find an
+   active 'TNM' or 'TimeGrp' constraint named 'clk_100'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_CLOCK        LOC = W18  |>
+   [zedboard_master_UCF_RevC_v2.ucf(6)]: NET "HDMI_CLOCK" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_CLOCK        LOC = W18  |> [zedboard_master_UCF_RevC_v2.ucf(6)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(6)]: NET "HDMI_CLOCK" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<0>       LOC = Y13  |>
+   [zedboard_master_UCF_RevC_v2.ucf(7)]: NET "HDMI_D<0>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<0>       LOC = Y13  |> [zedboard_master_UCF_RevC_v2.ucf(7)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(7)]: NET "HDMI_D<0>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<1>       LOC = AA13 |>
+   [zedboard_master_UCF_RevC_v2.ucf(8)]: NET "HDMI_D<1>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<1>       LOC = AA13 |> [zedboard_master_UCF_RevC_v2.ucf(8)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(8)]: NET "HDMI_D<1>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<2>       LOC = AA14 |>
+   [zedboard_master_UCF_RevC_v2.ucf(9)]: NET "HDMI_D<2>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<2>       LOC = AA14 |> [zedboard_master_UCF_RevC_v2.ucf(9)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(9)]: NET "HDMI_D<2>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<3>       LOC = Y14  |>
+   [zedboard_master_UCF_RevC_v2.ucf(10)]: NET "HDMI_D<3>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<3>       LOC = Y14  |> [zedboard_master_UCF_RevC_v2.ucf(10)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(10)]: NET "HDMI_D<3>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<4>       LOC = AB15 |>
+   [zedboard_master_UCF_RevC_v2.ucf(11)]: NET "HDMI_D<4>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<4>       LOC = AB15 |> [zedboard_master_UCF_RevC_v2.ucf(11)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(11)]: NET "HDMI_D<4>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<5>       LOC = AB16 |>
+   [zedboard_master_UCF_RevC_v2.ucf(12)]: NET "HDMI_D<5>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<5>       LOC = AB16 |> [zedboard_master_UCF_RevC_v2.ucf(12)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(12)]: NET "HDMI_D<5>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<6>       LOC = AA16 |>
+   [zedboard_master_UCF_RevC_v2.ucf(13)]: NET "HDMI_D<6>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<6>       LOC = AA16 |> [zedboard_master_UCF_RevC_v2.ucf(13)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(13)]: NET "HDMI_D<6>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<7>       LOC = AB17 |>
+   [zedboard_master_UCF_RevC_v2.ucf(14)]: NET "HDMI_D<7>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<7>       LOC = AB17 |> [zedboard_master_UCF_RevC_v2.ucf(14)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(14)]: NET "HDMI_D<7>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<8>       LOC = AA17 |>
+   [zedboard_master_UCF_RevC_v2.ucf(15)]: NET "HDMI_D<8>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<8>       LOC = AA17 |> [zedboard_master_UCF_RevC_v2.ucf(15)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(15)]: NET "HDMI_D<8>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<9>       LOC = Y15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(16)]: NET "HDMI_D<9>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<9>       LOC = Y15  |> [zedboard_master_UCF_RevC_v2.ucf(16)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(16)]: NET "HDMI_D<9>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<10>      LOC = W13  |>
+   [zedboard_master_UCF_RevC_v2.ucf(17)]: NET "HDMI_D<10>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<10>      LOC = W13  |> [zedboard_master_UCF_RevC_v2.ucf(17)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(17)]: NET "HDMI_D<10>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<11>      LOC = W15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(18)]: NET "HDMI_D<11>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<11>      LOC = W15  |> [zedboard_master_UCF_RevC_v2.ucf(18)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(18)]: NET "HDMI_D<11>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<12>      LOC = V15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(19)]: NET "HDMI_D<12>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<12>      LOC = V15  |> [zedboard_master_UCF_RevC_v2.ucf(19)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(19)]: NET "HDMI_D<12>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<13>      LOC = U17  |>
+   [zedboard_master_UCF_RevC_v2.ucf(20)]: NET "HDMI_D<13>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<13>      LOC = U17  |> [zedboard_master_UCF_RevC_v2.ucf(20)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(20)]: NET "HDMI_D<13>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<14>      LOC = V14  |>
+   [zedboard_master_UCF_RevC_v2.ucf(21)]: NET "HDMI_D<14>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<14>      LOC = V14  |> [zedboard_master_UCF_RevC_v2.ucf(21)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(21)]: NET "HDMI_D<14>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_D<15>      LOC = V13  |>
+   [zedboard_master_UCF_RevC_v2.ucf(22)]: NET "HDMI_D<15>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_D<15>      LOC = V13  |> [zedboard_master_UCF_RevC_v2.ucf(22)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(22)]: NET "HDMI_D<15>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_DE         LOC = U16  |>
+   [zedboard_master_UCF_RevC_v2.ucf(23)]: NET "HDMI_DE" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_DE         LOC = U16  |> [zedboard_master_UCF_RevC_v2.ucf(23)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(23)]: NET "HDMI_DE" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_HSYNC      LOC = V17  |>
+   [zedboard_master_UCF_RevC_v2.ucf(24)]: NET "HDMI_HSYNC" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_HSYNC      LOC = V17  |> [zedboard_master_UCF_RevC_v2.ucf(24)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(24)]: NET "HDMI_HSYNC" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_VSYNC      LOC = W17  |>
+   [zedboard_master_UCF_RevC_v2.ucf(25)]: NET "HDMI_VSYNC" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_VSYNC      LOC = W17  |> [zedboard_master_UCF_RevC_v2.ucf(25)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(25)]: NET "HDMI_VSYNC" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_INT        LOC = W16  |>
+   [zedboard_master_UCF_RevC_v2.ucf(26)]: NET "HDMI_INT" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_INT        LOC = W16  |> [zedboard_master_UCF_RevC_v2.ucf(26)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(26)]: NET "HDMI_INT" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_SCL        LOC = AA18 |>
+   [zedboard_master_UCF_RevC_v2.ucf(27)]: NET "HDMI_SCL" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_SCL        LOC = AA18 |> [zedboard_master_UCF_RevC_v2.ucf(27)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(27)]: NET "HDMI_SCL" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET HDMI_SDA        LOC = Y16  |>
+   [zedboard_master_UCF_RevC_v2.ucf(28)]: NET "HDMI_SDA" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET HDMI_SDA        LOC = Y16  |> [zedboard_master_UCF_RevC_v2.ucf(28)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS33 |>
+   [zedboard_master_UCF_RevC_v2.ucf(28)]: NET "HDMI_SDA" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PULLUP;>
+   [zedboard_master_UCF_RevC_v2.ucf(28)]: NET "HDMI_SDA" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<1>"          LOC = F22  |>
+   [zedboard_master_UCF_RevC_v2.ucf(32)]: NET "sw<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<1>"          LOC = F22  |> [zedboard_master_UCF_RevC_v2.ucf(32)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(32)]: NET "sw<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<2>"          LOC = G22  |>
+   [zedboard_master_UCF_RevC_v2.ucf(33)]: NET "sw<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<2>"          LOC = G22  |> [zedboard_master_UCF_RevC_v2.ucf(33)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(33)]: NET "sw<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<3>"          LOC = H22  |>
+   [zedboard_master_UCF_RevC_v2.ucf(34)]: NET "sw<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<3>"          LOC = H22  |> [zedboard_master_UCF_RevC_v2.ucf(34)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(34)]: NET "sw<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<4>"          LOC = F21  |>
+   [zedboard_master_UCF_RevC_v2.ucf(35)]: NET "sw<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<4>"          LOC = F21  |> [zedboard_master_UCF_RevC_v2.ucf(35)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(35)]: NET "sw<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<5>"          LOC = H19  |>
+   [zedboard_master_UCF_RevC_v2.ucf(36)]: NET "sw<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<5>"          LOC = H19  |> [zedboard_master_UCF_RevC_v2.ucf(36)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(36)]: NET "sw<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<6>"          LOC = H18  |>
+   [zedboard_master_UCF_RevC_v2.ucf(37)]: NET "sw<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<6>"          LOC = H18  |> [zedboard_master_UCF_RevC_v2.ucf(37)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(37)]: NET "sw<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<7>"          LOC = H17  |>
+   [zedboard_master_UCF_RevC_v2.ucf(38)]: NET "sw<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<7>"          LOC = H17  |> [zedboard_master_UCF_RevC_v2.ucf(38)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(38)]: NET "sw<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<8>"          LOC = M15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(39)]: NET "sw<8>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<8>"          LOC = M15  |> [zedboard_master_UCF_RevC_v2.ucf(39)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(39)]: NET "sw<8>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_down"           LOC = R16  |>
+   [zedboard_master_UCF_RevC_v2.ucf(41)]: NET "btn_down" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_down"           LOC = R16  |>
+   [zedboard_master_UCF_RevC_v2.ucf(41)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(41)]: NET "btn_down" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_left"          LOC = N15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(42)]: NET "btn_left" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_left"          LOC = N15  |>
+   [zedboard_master_UCF_RevC_v2.ucf(42)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(42)]: NET "btn_left" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_right"          LOC = R18  |>
+   [zedboard_master_UCF_RevC_v2.ucf(43)]: NET "btn_right" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_right"          LOC = R18  |>
+   [zedboard_master_UCF_RevC_v2.ucf(43)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(43)]: NET "btn_right" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_up"          LOC = T18  |>
+   [zedboard_master_UCF_RevC_v2.ucf(44)]: NET "btn_up" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_up"          LOC = T18  |> [zedboard_master_UCF_RevC_v2.ucf(44)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVCMOS18;>
+   [zedboard_master_UCF_RevC_v2.ucf(44)]: NET "btn_up" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<0>"        LOC = T22   |>
+   [zedboard_master_UCF_RevC_v2.ucf(46)]: NET "leds<0>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<0>"        LOC = T22   |> [zedboard_master_UCF_RevC_v2.ucf(46)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(46)]: NET "leds<0>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<1>"        LOC = T21   |>
+   [zedboard_master_UCF_RevC_v2.ucf(47)]: NET "leds<1>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<1>"        LOC = T21   |> [zedboard_master_UCF_RevC_v2.ucf(47)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(47)]: NET "leds<1>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<2>"        LOC = U22   |>
+   [zedboard_master_UCF_RevC_v2.ucf(48)]: NET "leds<2>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<2>"        LOC = U22   |> [zedboard_master_UCF_RevC_v2.ucf(48)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(48)]: NET "leds<2>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<3>"        LOC = U21   |>
+   [zedboard_master_UCF_RevC_v2.ucf(49)]: NET "leds<3>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<3>"        LOC = U21   |> [zedboard_master_UCF_RevC_v2.ucf(49)]'
+   could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
+   [zedboard_master_UCF_RevC_v2.ucf(49)]: NET "leds<3>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:191 - The TNM 'clk_100', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_clk_100'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_clk_100 = PERIOD "clk_100" 10 ns HIGH 50%;>
+   [zedboard_master_UCF_RevC_v2.ucf(4)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_clk_100 = PERIOD "clk_100" 10 ns HIGH 50%;>
+   [zedboard_master_UCF_RevC_v2.ucf(4)]
+
+Done...
+
+Processing BMM file "adder.bmm" ...
+
+WARNING::53 - File 'adder.bmm' is empty or has no BMM content.
+
+
+Checking expanded design ...
+ERROR:NgdBuild:605 - logical root block 'big_number_first_tb' with type
+   'big_number_first_tb' is unexpanded. Symbol 'big_number_first_tb' is not
+   supported in target 'zynq'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    83
+  Number of warnings:  44
+
+Total memory usage is 147912 kilobytes
+
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "big_number_first_tb.bld"...

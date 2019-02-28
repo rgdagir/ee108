@@ -1,0 +1,5 @@
+verilog isim_temp "rotator.v"
+verilog isim_temp "hash_round.v"
+verilog isim_temp "hasher.v"
+verilog isim_temp "hasher_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

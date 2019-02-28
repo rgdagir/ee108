@@ -1,0 +1,7 @@
+Most critical path in our design:
+
+Slack (setup path):     0.730ns (requirement - (data path - clock path skew + uncertainty))
+Source:               adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (FF)
+Destination:          wd_top/wc/capture_counter_flipflop/q_5 (FF)
+
+Maximum Data Path at Fast Process Corner: adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample to wd_top/wc/capture_counter_flipflop/q_5

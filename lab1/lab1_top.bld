@@ -1,0 +1,51 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc lab1_interface.ucf -uc lab1.ucf -p
+xc7z020-clg484-3 lab1_top.ngc lab1_top.ngd
+
+Reading NGO file "Z:/groups/02/lab1/lab1_top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "lab1_interface.ucf" ...
+Annotating constraints to design from ucf file "lab1.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_100', used in period specification
+   'TS_clk_100', was traced into PLLE2_ADV instance
+   interface/hdmi/PLLE2_BASE_inst. The following new TNM groups and period
+   specifications were generated at the PLLE2_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_interface_hdmi_clk = PERIOD "interface_hdmi_clk"
+   TS_clk_100 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_100', used in period specification
+   'TS_clk_100', was traced into PLLE2_ADV instance
+   interface/hdmi/PLLE2_BASE_inst. The following new TNM groups and period
+   specifications were generated at the PLLE2_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_interface_hdmi_clk_vgax2 = PERIOD
+   "interface_hdmi_clk_vgax2" TS_clk_100 / 1.8 HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 153288 kilobytes
+
+Writing NGD file "lab1_top.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   11 sec
+
+Writing NGDBUILD log file "lab1_top.bld"...

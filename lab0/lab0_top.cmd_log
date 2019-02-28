@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "Z:/groups/02/lab0/lab0_top.xst" -ofn "Z:/groups/02/lab0/lab0_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab0.ucf -p xc7z020-clg484-3 lab0_top.ngc lab0_top.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lab0_top_map.ncd lab0_top.ngd lab0_top.pcf 
+par -w -intstyle ise -ol high -mt off lab0_top_map.ncd lab0_top.ncd lab0_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab0_top.twx lab0_top.ncd -o lab0_top.twr lab0_top.pcf -ucf lab0.ucf 
+bitgen -intstyle ise -f lab0_top.ut lab0_top.ncd 

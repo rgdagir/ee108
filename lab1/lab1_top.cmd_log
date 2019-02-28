@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "Z:/groups/02/lab1/lab1_top.xst" -ofn "Z:/groups/02/lab1/lab1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab1_interface.ucf -uc lab1.ucf -p xc7z020-clg484-3 lab1_top.ngc lab1_top.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lab1_top_map.ncd lab1_top.ngd lab1_top.pcf 
+par -w -intstyle ise -ol high -mt off lab1_top_map.ncd lab1_top.ncd lab1_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab1_top.twx lab1_top.ncd -o lab1_top.twr lab1_top.pcf -ucf lab1_interface.ucf -ucf lab1.ucf 
+bitgen -intstyle ise -f lab1_top.ut lab1_top.ncd 
+xst -intstyle ise -ifn "Z:/groups/02/lab1/lab1_top.xst" -ofn "Z:/groups/02/lab1/lab1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab1_interface.ucf -uc lab1.ucf -p xc7z020-clg484-3 lab1_top.ngc lab1_top.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lab1_top_map.ncd lab1_top.ngd lab1_top.pcf 
+par -w -intstyle ise -ol high -mt off lab1_top_map.ncd lab1_top.ncd lab1_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab1_top.twx lab1_top.ncd -o lab1_top.twr lab1_top.pcf -ucf lab1_interface.ucf -ucf lab1.ucf 
+bitgen -intstyle ise -f lab1_top.ut lab1_top.ncd 

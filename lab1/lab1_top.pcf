@@ -1,0 +1,577 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jan 23 11:09:56 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "center_button" LOCATE = SITE "P16" LEVEL 1;
+COMP "right_button" LOCATE = SITE "R18" LEVEL 1;
+COMP "hdmi_de" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk_100" LOCATE = SITE "Y9" LEVEL 1;
+COMP "hdmi_sda" LOCATE = SITE "Y16" LEVEL 1;
+COMP "hdmi_scl" LOCATE = SITE "AA18" LEVEL 1;
+COMP "up_button" LOCATE = SITE "T18" LEVEL 1;
+COMP "hdmi_d<10>" LOCATE = SITE "W13" LEVEL 1;
+COMP "hdmi_d<14>" LOCATE = SITE "V14" LEVEL 1;
+COMP "hdmi_d<13>" LOCATE = SITE "U17" LEVEL 1;
+COMP "hdmi_d<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "hdmi_d<11>" LOCATE = SITE "W15" LEVEL 1;
+COMP "hdmi_d<15>" LOCATE = SITE "V13" LEVEL 1;
+COMP "hdmi_d<8>" LOCATE = SITE "AA17" LEVEL 1;
+COMP "hdmi_d<7>" LOCATE = SITE "AB17" LEVEL 1;
+COMP "hdmi_d<6>" LOCATE = SITE "AA16" LEVEL 1;
+COMP "hdmi_d<5>" LOCATE = SITE "AB16" LEVEL 1;
+COMP "hdmi_d<9>" LOCATE = SITE "Y15" LEVEL 1;
+COMP "hdmi_d<0>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "U21" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "T21" LEVEL 1;
+COMP "hdmi_d<4>" LOCATE = SITE "AB15" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "T22" LEVEL 1;
+COMP "hdmi_d<3>" LOCATE = SITE "Y14" LEVEL 1;
+COMP "hdmi_d<2>" LOCATE = SITE "AA14" LEVEL 1;
+COMP "hdmi_d<1>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "hdmi_clock" LOCATE = SITE "W18" LEVEL 1;
+COMP "left_button" LOCATE = SITE "N15" LEVEL 1;
+COMP "hdmi_vsync" LOCATE = SITE "W17" LEVEL 1;
+COMP "down_button" LOCATE = SITE "R16" LEVEL 1;
+COMP "hdmi_hsync" LOCATE = SITE "V17" LEVEL 1;
+COMP "hdmi_int" LOCATE = SITE "W16" LEVEL 1;
+PIN interface/Madd_n0136_Madd1_pins<117> = BEL "interface/Madd_n0136_Madd1"
+        PINNAME CLK;
+PIN interface/Madd_n0137_Madd1_pins<117> = BEL "interface/Madd_n0137_Madd1"
+        PINNAME CLK;
+PIN interface/hdmi/PLLE2_BASE_inst_pins<2> = BEL
+        "interface/hdmi/PLLE2_BASE_inst" PINNAME CLKIN1;
+TIMEGRP clk_100 = PIN "interface/Madd_n0136_Madd1_pins<117>" PIN
+        "interface/Madd_n0137_Madd1_pins<117>" BEL "interface/usr_box/pos_2"
+        BEL "interface/usr_box/pos_1" BEL "interface/usr_box/pos_0" BEL
+        "interface/pass_box/pos_2" BEL "interface/pass_box/pos_1" BEL
+        "interface/pass_box/pos_0" BEL "interface/led_div/q_26" BEL
+        "interface/led_div/q_25" BEL "interface/led_div/q_24" BEL
+        "interface/led_div/q_23" BEL "interface/led_div/q_22" BEL
+        "interface/led_div/q_21" BEL "interface/led_div/q_20" BEL
+        "interface/led_div/q_19" BEL "interface/led_div/q_18" BEL
+        "interface/led_div/q_17" BEL "interface/led_div/q_16" BEL
+        "interface/led_div/q_15" BEL "interface/led_div/q_14" BEL
+        "interface/led_div/q_13" BEL "interface/led_div/q_12" BEL
+        "interface/led_div/q_11" BEL "interface/led_div/q_10" BEL
+        "interface/led_div/q_9" BEL "interface/led_div/q_8" BEL
+        "interface/led_div/q_7" BEL "interface/led_div/q_6" BEL
+        "interface/led_div/q_5" BEL "interface/led_div/q_4" BEL
+        "interface/led_div/q_3" BEL "interface/led_div/q_2" BEL
+        "interface/led_div/q_1" BEL "interface/led_div/q_0" BEL
+        "interface/bpu1/one_pulse/last_value_storage/q_0" BEL
+        "interface/bpu2/one_pulse/last_value_storage/q_0" BEL
+        "interface/bpu3/one_pulse/last_value_storage/q_0" BEL
+        "interface/bpu4/one_pulse/last_value_storage/q_0" BEL
+        "interface/bpu5/one_pulse/last_value_storage/q_0" BEL
+        "interface/char_dn_pulser/last_value_storage/q_0" BEL
+        "interface/char_up_pulser/last_value_storage/q_0" BEL
+        "interface/password_62" BEL "interface/password_61" BEL
+        "interface/password_60" BEL "interface/password_59" BEL
+        "interface/password_58" BEL "interface/password_57" BEL
+        "interface/password_56" BEL "interface/password_54" BEL
+        "interface/password_53" BEL "interface/password_52" BEL
+        "interface/password_51" BEL "interface/password_50" BEL
+        "interface/password_49" BEL "interface/password_48" BEL
+        "interface/password_46" BEL "interface/password_45" BEL
+        "interface/password_44" BEL "interface/password_43" BEL
+        "interface/password_42" BEL "interface/password_41" BEL
+        "interface/password_40" BEL "interface/password_38" BEL
+        "interface/password_37" BEL "interface/password_36" BEL
+        "interface/password_35" BEL "interface/password_34" BEL
+        "interface/password_33" BEL "interface/password_32" BEL
+        "interface/password_30" BEL "interface/password_29" BEL
+        "interface/password_28" BEL "interface/password_27" BEL
+        "interface/password_26" BEL "interface/password_25" BEL
+        "interface/password_24" BEL "interface/password_22" BEL
+        "interface/password_21" BEL "interface/password_20" BEL
+        "interface/password_19" BEL "interface/password_18" BEL
+        "interface/password_17" BEL "interface/password_16" BEL
+        "interface/password_14" BEL "interface/password_13" BEL
+        "interface/password_12" BEL "interface/password_11" BEL
+        "interface/password_10" BEL "interface/password_9" BEL
+        "interface/password_8" BEL "interface/password_6" BEL
+        "interface/password_5" BEL "interface/password_4" BEL
+        "interface/password_3" BEL "interface/password_2" BEL
+        "interface/password_1" BEL "interface/password_0" BEL
+        "interface/username_63" BEL "interface/username_62" BEL
+        "interface/username_61" BEL "interface/username_60" BEL
+        "interface/username_59" BEL "interface/username_58" BEL
+        "interface/username_57" BEL "interface/username_56" BEL
+        "interface/username_55" BEL "interface/username_54" BEL
+        "interface/username_53" BEL "interface/username_52" BEL
+        "interface/username_51" BEL "interface/username_50" BEL
+        "interface/username_49" BEL "interface/username_48" BEL
+        "interface/username_47" BEL "interface/username_46" BEL
+        "interface/username_45" BEL "interface/username_44" BEL
+        "interface/username_43" BEL "interface/username_42" BEL
+        "interface/username_41" BEL "interface/username_40" BEL
+        "interface/username_39" BEL "interface/username_38" BEL
+        "interface/username_37" BEL "interface/username_36" BEL
+        "interface/username_35" BEL "interface/username_34" BEL
+        "interface/username_33" BEL "interface/username_32" BEL
+        "interface/username_31" BEL "interface/username_30" BEL
+        "interface/username_29" BEL "interface/username_28" BEL
+        "interface/username_27" BEL "interface/username_26" BEL
+        "interface/username_25" BEL "interface/username_24" BEL
+        "interface/username_23" BEL "interface/username_22" BEL
+        "interface/username_21" BEL "interface/username_20" BEL
+        "interface/username_19" BEL "interface/username_18" BEL
+        "interface/username_17" BEL "interface/username_16" BEL
+        "interface/username_15" BEL "interface/username_14" BEL
+        "interface/username_13" BEL "interface/username_12" BEL
+        "interface/username_11" BEL "interface/username_10" BEL
+        "interface/username_9" BEL "interface/username_8" BEL
+        "interface/username_7" BEL "interface/username_6" BEL
+        "interface/username_5" BEL "interface/username_4" BEL
+        "interface/username_3" BEL "interface/username_2" BEL
+        "interface/username_1" BEL "interface/username_0" BEL
+        "interface/usr_box/value_63" BEL "interface/usr_box/value_62" BEL
+        "interface/usr_box/value_61" BEL "interface/usr_box/value_60" BEL
+        "interface/usr_box/value_59" BEL "interface/usr_box/value_58" BEL
+        "interface/usr_box/value_57" BEL "interface/usr_box/value_56" BEL
+        "interface/usr_box/value_55" BEL "interface/usr_box/value_54" BEL
+        "interface/usr_box/value_53" BEL "interface/usr_box/value_52" BEL
+        "interface/usr_box/value_51" BEL "interface/usr_box/value_50" BEL
+        "interface/usr_box/value_49" BEL "interface/usr_box/value_48" BEL
+        "interface/usr_box/value_47" BEL "interface/usr_box/value_46" BEL
+        "interface/usr_box/value_45" BEL "interface/usr_box/value_44" BEL
+        "interface/usr_box/value_43" BEL "interface/usr_box/value_42" BEL
+        "interface/usr_box/value_41" BEL "interface/usr_box/value_40" BEL
+        "interface/usr_box/value_39" BEL "interface/usr_box/value_38" BEL
+        "interface/usr_box/value_37" BEL "interface/usr_box/value_36" BEL
+        "interface/usr_box/value_35" BEL "interface/usr_box/value_34" BEL
+        "interface/usr_box/value_33" BEL "interface/usr_box/value_32" BEL
+        "interface/usr_box/value_31" BEL "interface/usr_box/value_30" BEL
+        "interface/usr_box/value_29" BEL "interface/usr_box/value_28" BEL
+        "interface/usr_box/value_27" BEL "interface/usr_box/value_26" BEL
+        "interface/usr_box/value_25" BEL "interface/usr_box/value_24" BEL
+        "interface/usr_box/value_23" BEL "interface/usr_box/value_22" BEL
+        "interface/usr_box/value_21" BEL "interface/usr_box/value_20" BEL
+        "interface/usr_box/value_19" BEL "interface/usr_box/value_18" BEL
+        "interface/usr_box/value_17" BEL "interface/usr_box/value_16" BEL
+        "interface/usr_box/value_15" BEL "interface/usr_box/value_14" BEL
+        "interface/usr_box/value_13" BEL "interface/usr_box/value_12" BEL
+        "interface/usr_box/value_11" BEL "interface/usr_box/value_10" BEL
+        "interface/usr_box/value_9" BEL "interface/usr_box/value_8" BEL
+        "interface/usr_box/value_7" BEL "interface/usr_box/value_6" BEL
+        "interface/usr_box/value_5" BEL "interface/usr_box/value_4" BEL
+        "interface/usr_box/value_3" BEL "interface/usr_box/value_2" BEL
+        "interface/usr_box/value_1" BEL "interface/usr_box/value_0" BEL
+        "interface/pass_box/value_62" BEL "interface/pass_box/value_61" BEL
+        "interface/pass_box/value_60" BEL "interface/pass_box/value_59" BEL
+        "interface/pass_box/value_58" BEL "interface/pass_box/value_57" BEL
+        "interface/pass_box/value_56" BEL "interface/pass_box/value_54" BEL
+        "interface/pass_box/value_53" BEL "interface/pass_box/value_52" BEL
+        "interface/pass_box/value_51" BEL "interface/pass_box/value_50" BEL
+        "interface/pass_box/value_49" BEL "interface/pass_box/value_48" BEL
+        "interface/pass_box/value_46" BEL "interface/pass_box/value_45" BEL
+        "interface/pass_box/value_44" BEL "interface/pass_box/value_43" BEL
+        "interface/pass_box/value_42" BEL "interface/pass_box/value_41" BEL
+        "interface/pass_box/value_40" BEL "interface/pass_box/value_38" BEL
+        "interface/pass_box/value_37" BEL "interface/pass_box/value_36" BEL
+        "interface/pass_box/value_35" BEL "interface/pass_box/value_34" BEL
+        "interface/pass_box/value_33" BEL "interface/pass_box/value_32" BEL
+        "interface/pass_box/value_30" BEL "interface/pass_box/value_29" BEL
+        "interface/pass_box/value_28" BEL "interface/pass_box/value_27" BEL
+        "interface/pass_box/value_26" BEL "interface/pass_box/value_25" BEL
+        "interface/pass_box/value_24" BEL "interface/pass_box/value_22" BEL
+        "interface/pass_box/value_21" BEL "interface/pass_box/value_20" BEL
+        "interface/pass_box/value_19" BEL "interface/pass_box/value_18" BEL
+        "interface/pass_box/value_17" BEL "interface/pass_box/value_16" BEL
+        "interface/pass_box/value_14" BEL "interface/pass_box/value_13" BEL
+        "interface/pass_box/value_12" BEL "interface/pass_box/value_11" BEL
+        "interface/pass_box/value_10" BEL "interface/pass_box/value_9" BEL
+        "interface/pass_box/value_8" BEL "interface/pass_box/value_6" BEL
+        "interface/pass_box/value_5" BEL "interface/pass_box/value_4" BEL
+        "interface/pass_box/value_3" BEL "interface/pass_box/value_2" BEL
+        "interface/pass_box/value_1" BEL "interface/pass_box/value_0" BEL
+        "interface/converted_15" BEL "interface/converted_14" BEL
+        "interface/converted_13" BEL "interface/converted_12" BEL
+        "interface/converted_11" BEL "interface/converted_10" BEL
+        "interface/converted_9" BEL "interface/converted_8" BEL
+        "interface/converted_7" BEL "interface/converted_6" BEL
+        "interface/converted_5" BEL "interface/converted_4" BEL
+        "interface/converted_3" BEL "interface/converted_2" BEL
+        "interface/converted_1" BEL "interface/converted_0" BEL
+        "interface/valid_flopped" BEL "interface/ye_dff/q_17" BEL
+        "interface/ye_dff/q_16" BEL "interface/ye_dff/q_15" BEL
+        "interface/x_dff/q_10" BEL "interface/x_dff/q_9" BEL
+        "interface/x_dff/q_8" BEL "interface/x_dff/q_7" BEL
+        "interface/x_dff/q_6" BEL "interface/x_dff/q_5" BEL
+        "interface/x_dff/q_4" BEL "interface/x_dff/q_3" BEL
+        "interface/x_dff/q_2" BEL "interface/x_dff/q_1" BEL
+        "interface/y_dff/q_9" BEL "interface/y_dff/q_8" BEL
+        "interface/y_dff/q_7" BEL "interface/y_dff/q_6" BEL
+        "interface/y_dff/q_5" BEL "interface/y_dff/q_4" BEL
+        "interface/y_dff/q_3" BEL "interface/y_dff/q_2" BEL
+        "interface/y_dff/q_1" BEL "interface/bpu5/debounce/counter/q_19" BEL
+        "interface/bpu5/debounce/counter/q_18" BEL
+        "interface/bpu5/debounce/counter/q_17" BEL
+        "interface/bpu5/debounce/counter/q_16" BEL
+        "interface/bpu5/debounce/counter/q_15" BEL
+        "interface/bpu5/debounce/counter/q_14" BEL
+        "interface/bpu5/debounce/counter/q_13" BEL
+        "interface/bpu5/debounce/counter/q_12" BEL
+        "interface/bpu5/debounce/counter/q_11" BEL
+        "interface/bpu5/debounce/counter/q_10" BEL
+        "interface/bpu5/debounce/counter/q_9" BEL
+        "interface/bpu5/debounce/counter/q_8" BEL
+        "interface/bpu5/debounce/counter/q_7" BEL
+        "interface/bpu5/debounce/counter/q_6" BEL
+        "interface/bpu5/debounce/counter/q_5" BEL
+        "interface/bpu5/debounce/counter/q_4" BEL
+        "interface/bpu5/debounce/counter/q_3" BEL
+        "interface/bpu5/debounce/counter/q_2" BEL
+        "interface/bpu5/debounce/counter/q_1" BEL
+        "interface/bpu5/debounce/counter/q_0" BEL
+        "interface/bpu5/debounce/state/q_0" BEL
+        "interface/bpu5/debounce/state/q_1" BEL
+        "interface/bpu4/debounce/counter/q_19" BEL
+        "interface/bpu4/debounce/counter/q_18" BEL
+        "interface/bpu4/debounce/counter/q_17" BEL
+        "interface/bpu4/debounce/counter/q_16" BEL
+        "interface/bpu4/debounce/counter/q_15" BEL
+        "interface/bpu4/debounce/counter/q_14" BEL
+        "interface/bpu4/debounce/counter/q_13" BEL
+        "interface/bpu4/debounce/counter/q_12" BEL
+        "interface/bpu4/debounce/counter/q_11" BEL
+        "interface/bpu4/debounce/counter/q_10" BEL
+        "interface/bpu4/debounce/counter/q_9" BEL
+        "interface/bpu4/debounce/counter/q_8" BEL
+        "interface/bpu4/debounce/counter/q_7" BEL
+        "interface/bpu4/debounce/counter/q_6" BEL
+        "interface/bpu4/debounce/counter/q_5" BEL
+        "interface/bpu4/debounce/counter/q_4" BEL
+        "interface/bpu4/debounce/counter/q_3" BEL
+        "interface/bpu4/debounce/counter/q_2" BEL
+        "interface/bpu4/debounce/counter/q_1" BEL
+        "interface/bpu4/debounce/counter/q_0" BEL
+        "interface/bpu4/debounce/state/q_0" BEL
+        "interface/bpu4/debounce/state/q_1" BEL
+        "interface/bpu3/debounce/counter/q_19" BEL
+        "interface/bpu3/debounce/counter/q_18" BEL
+        "interface/bpu3/debounce/counter/q_17" BEL
+        "interface/bpu3/debounce/counter/q_16" BEL
+        "interface/bpu3/debounce/counter/q_15" BEL
+        "interface/bpu3/debounce/counter/q_14" BEL
+        "interface/bpu3/debounce/counter/q_13" BEL
+        "interface/bpu3/debounce/counter/q_12" BEL
+        "interface/bpu3/debounce/counter/q_11" BEL
+        "interface/bpu3/debounce/counter/q_10" BEL
+        "interface/bpu3/debounce/counter/q_9" BEL
+        "interface/bpu3/debounce/counter/q_8" BEL
+        "interface/bpu3/debounce/counter/q_7" BEL
+        "interface/bpu3/debounce/counter/q_6" BEL
+        "interface/bpu3/debounce/counter/q_5" BEL
+        "interface/bpu3/debounce/counter/q_4" BEL
+        "interface/bpu3/debounce/counter/q_3" BEL
+        "interface/bpu3/debounce/counter/q_2" BEL
+        "interface/bpu3/debounce/counter/q_1" BEL
+        "interface/bpu3/debounce/counter/q_0" BEL
+        "interface/bpu3/debounce/state/q_0" BEL
+        "interface/bpu3/debounce/state/q_1" BEL
+        "interface/bpu2/debounce/counter/q_19" BEL
+        "interface/bpu2/debounce/counter/q_18" BEL
+        "interface/bpu2/debounce/counter/q_17" BEL
+        "interface/bpu2/debounce/counter/q_16" BEL
+        "interface/bpu2/debounce/counter/q_15" BEL
+        "interface/bpu2/debounce/counter/q_14" BEL
+        "interface/bpu2/debounce/counter/q_13" BEL
+        "interface/bpu2/debounce/counter/q_12" BEL
+        "interface/bpu2/debounce/counter/q_11" BEL
+        "interface/bpu2/debounce/counter/q_10" BEL
+        "interface/bpu2/debounce/counter/q_9" BEL
+        "interface/bpu2/debounce/counter/q_8" BEL
+        "interface/bpu2/debounce/counter/q_7" BEL
+        "interface/bpu2/debounce/counter/q_6" BEL
+        "interface/bpu2/debounce/counter/q_5" BEL
+        "interface/bpu2/debounce/counter/q_4" BEL
+        "interface/bpu2/debounce/counter/q_3" BEL
+        "interface/bpu2/debounce/counter/q_2" BEL
+        "interface/bpu2/debounce/counter/q_1" BEL
+        "interface/bpu2/debounce/counter/q_0" BEL
+        "interface/bpu2/debounce/state/q_0" BEL
+        "interface/bpu2/debounce/state/q_1" BEL
+        "interface/bpu1/debounce/counter/q_19" BEL
+        "interface/bpu1/debounce/counter/q_18" BEL
+        "interface/bpu1/debounce/counter/q_17" BEL
+        "interface/bpu1/debounce/counter/q_16" BEL
+        "interface/bpu1/debounce/counter/q_15" BEL
+        "interface/bpu1/debounce/counter/q_14" BEL
+        "interface/bpu1/debounce/counter/q_13" BEL
+        "interface/bpu1/debounce/counter/q_12" BEL
+        "interface/bpu1/debounce/counter/q_11" BEL
+        "interface/bpu1/debounce/counter/q_10" BEL
+        "interface/bpu1/debounce/counter/q_9" BEL
+        "interface/bpu1/debounce/counter/q_8" BEL
+        "interface/bpu1/debounce/counter/q_7" BEL
+        "interface/bpu1/debounce/counter/q_6" BEL
+        "interface/bpu1/debounce/counter/q_5" BEL
+        "interface/bpu1/debounce/counter/q_4" BEL
+        "interface/bpu1/debounce/counter/q_3" BEL
+        "interface/bpu1/debounce/counter/q_2" BEL
+        "interface/bpu1/debounce/counter/q_1" BEL
+        "interface/bpu1/debounce/counter/q_0" BEL
+        "interface/bpu1/debounce/state/q_0" BEL
+        "interface/bpu1/debounce/state/q_1" BEL "interface/cr_7" BEL
+        "interface/cr_6" BEL "interface/cr_5" BEL "interface/cr_4" BEL
+        "interface/cr_3" BEL "interface/cr_2" BEL "interface/cr_1" BEL
+        "interface/cr_0" BEL "interface/cb_7" BEL "interface/cb_6" BEL
+        "interface/cb_5" BEL "interface/cb_4" BEL "interface/cb_3" BEL
+        "interface/cb_2" BEL "interface/cb_1" BEL "interface/cb_0" BEL
+        "interface/focus" BEL "interface/x_dff/q_5_1" BEL
+        "interface/x_dff/q_6_1" BEL "interface/x_dff/q_7_1" BEL
+        "interface/x_dff/q_6_2" BEL "clk_100_IBUF_BUFG" BEL
+        "interface/bpu1/sync/ff3/Mshreg_q_0" BEL "interface/bpu1/sync/ff3/q_0"
+        BEL "interface/bpu2/sync/ff3/Mshreg_q_0" BEL
+        "interface/bpu2/sync/ff3/q_0" BEL "interface/bpu3/sync/ff3/Mshreg_q_0"
+        BEL "interface/bpu3/sync/ff3/q_0" BEL
+        "interface/bpu4/sync/ff3/Mshreg_q_0" BEL "interface/bpu4/sync/ff3/q_0"
+        BEL "interface/Mshreg_converted_22" BEL "interface/converted_22" BEL
+        "interface/bpu5/sync/ff3/Mshreg_q_0" BEL "interface/bpu5/sync/ff3/q_0"
+        BEL "interface/Mshreg_converted_23" BEL "interface/converted_23" BEL
+        "interface/Mshreg_converted_19" BEL "interface/converted_19" BEL
+        "interface/Mshreg_converted_21" BEL "interface/converted_21" BEL
+        "interface/Mshreg_converted_20" BEL "interface/converted_20" BEL
+        "interface/Mshreg_converted_16" BEL "interface/converted_16" BEL
+        "interface/Mshreg_converted_18" BEL "interface/converted_18" BEL
+        "interface/Mshreg_converted_17" BEL "interface/converted_17" PIN
+        "interface/hdmi/PLLE2_BASE_inst_pins<2>";
+TIMEGRP interface_hdmi_clk_vgax2 = BEL "interface/hdmi/ODDR_inst" BEL
+        "interface/hdmi/vcounter_10" BEL "interface/hdmi/vcounter_9" BEL
+        "interface/hdmi/vcounter_8" BEL "interface/hdmi/vcounter_7" BEL
+        "interface/hdmi/vcounter_6" BEL "interface/hdmi/vcounter_5" BEL
+        "interface/hdmi/vcounter_4" BEL "interface/hdmi/vcounter_3" BEL
+        "interface/hdmi/vcounter_2" BEL "interface/hdmi/vcounter_1" BEL
+        "interface/hdmi/vcounter_0" BEL "interface/hdmi/hcounter_10" BEL
+        "interface/hdmi/hcounter_9" BEL "interface/hdmi/hcounter_8" BEL
+        "interface/hdmi/hcounter_7" BEL "interface/hdmi/hcounter_6" BEL
+        "interface/hdmi/hcounter_5" BEL "interface/hdmi/hcounter_4" BEL
+        "interface/hdmi/hcounter_3" BEL "interface/hdmi/hcounter_2" BEL
+        "interface/hdmi/hcounter_1" BEL "interface/hdmi/hcounter_0" BEL
+        "interface/hdmi/hdmi_de" BEL "interface/hdmi/blanking" BEL
+        "interface/hdmi/xpos_10" BEL "interface/hdmi/xpos_9" BEL
+        "interface/hdmi/xpos_8" BEL "interface/hdmi/xpos_7" BEL
+        "interface/hdmi/xpos_6" BEL "interface/hdmi/xpos_5" BEL
+        "interface/hdmi/xpos_4" BEL "interface/hdmi/xpos_3" BEL
+        "interface/hdmi/xpos_2" BEL "interface/hdmi/xpos_1" BEL
+        "interface/hdmi/ypos_9" BEL "interface/hdmi/ypos_8" BEL
+        "interface/hdmi/ypos_7" BEL "interface/hdmi/ypos_6" BEL
+        "interface/hdmi/ypos_5" BEL "interface/hdmi/ypos_4" BEL
+        "interface/hdmi/ypos_3" BEL "interface/hdmi/ypos_2" BEL
+        "interface/hdmi/ypos_1" BEL "interface/hdmi/hdmi_clk_bits_0" BEL
+        "interface/hdmi/hdmi_d_15" BEL "interface/hdmi/hdmi_d_14" BEL
+        "interface/hdmi/hdmi_d_13" BEL "interface/hdmi/hdmi_d_12" BEL
+        "interface/hdmi/hdmi_d_11" BEL "interface/hdmi/hdmi_d_10" BEL
+        "interface/hdmi/hdmi_d_9" BEL "interface/hdmi/hdmi_d_8" BEL
+        "interface/hdmi/hdmi_vsync" BEL "interface/hdmi/hdmi_hsync" BEL
+        "interface/hdmi/edge" BEL "interface/hdmi/hsync" BEL
+        "interface/hdmi/vsync";
+TIMEGRP interface_hdmi_clk = BEL "interface/hdmi/Inst_i2c_sender/divider_7"
+        BEL "interface/hdmi/Inst_i2c_sender/divider_6" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_5" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_4" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_3" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_2" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_1" BEL
+        "interface/hdmi/Inst_i2c_sender/divider_0" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_22" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_21" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_20" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_19" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_18" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_17" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_16" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_15" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_14" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_13" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_12" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_11" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_10" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_9" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_8" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_7" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_6" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_5" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_4" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_3" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_2" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_1" BEL
+        "interface/hdmi/Inst_i2c_sender/initial_pause_0" BEL
+        "interface/hdmi/Inst_i2c_sender/address_7" BEL
+        "interface/hdmi/Inst_i2c_sender/address_6" BEL
+        "interface/hdmi/Inst_i2c_sender/address_5" BEL
+        "interface/hdmi/Inst_i2c_sender/address_4" BEL
+        "interface/hdmi/Inst_i2c_sender/address_3" BEL
+        "interface/hdmi/Inst_i2c_sender/address_2" BEL
+        "interface/hdmi/Inst_i2c_sender/address_1" BEL
+        "interface/hdmi/Inst_i2c_sender/address_0" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_28" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_27" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_26" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_25" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_24" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_23" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_22" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_21" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_20" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_19" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_18" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_17" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_16" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_15" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_14" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_13" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_12" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_11" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_10" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_9" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_8" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_7" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_6" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_5" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_4" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_3" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_2" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_1" BEL
+        "interface/hdmi/Inst_i2c_sender/data_sr_0" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_15" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_14" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_13" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_12" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_11" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_10" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_9" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_8" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_7" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_6" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_5" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_4" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_3" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_2" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_1" BEL
+        "interface/hdmi/Inst_i2c_sender/reg_value_0" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_28" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_27" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_26" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_25" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_24" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_23" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_22" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_21" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_20" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_19" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_18" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_17" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_16" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_15" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_14" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_13" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_12" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_11" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_10" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_9" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_8" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_7" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_6" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_5" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_4" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_3" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_2" BEL
+        "interface/hdmi/Inst_i2c_sender/tristate_sr_1" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_28" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_27" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_26" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_25" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_24" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_23" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_22" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_21" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_20" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_19" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_18" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_17" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_16" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_15" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_14" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_13" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_12" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_11" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_10" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_9" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_8" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_7" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_6" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_5" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_4" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_3" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_2" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_last_quarter_1" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_28" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_27" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_26" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_25" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_24" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_23" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_22" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_21" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_20" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_19" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_18" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_17" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_16" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_15" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_14" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_13" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_12" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_11" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_10" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_9" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_8" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_7" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_6" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_5" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_4" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_3" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_2" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_1" BEL
+        "interface/hdmi/Inst_i2c_sender/clk_first_quarter_0" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_28" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_27" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_26" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_25" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_24" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_23" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_22" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_21" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_20" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_19" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_18" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_17" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_16" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_15" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_14" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_13" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_12" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_11" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_10" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_9" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_8" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_7" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_6" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_5" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_4" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_3" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_2" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_1" BEL
+        "interface/hdmi/Inst_i2c_sender/busy_sr_0" BEL
+        "interface/hdmi/Inst_i2c_sender/finished";
+TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+TS_interface_hdmi_clk = PERIOD TIMEGRP "interface_hdmi_clk" TS_clk_100 HIGH
+        50%;
+TS_interface_hdmi_clk_vgax2 = PERIOD TIMEGRP "interface_hdmi_clk_vgax2"
+        TS_clk_100 / 1.8 HIGH 50%;
+SCHEMATIC END;
+

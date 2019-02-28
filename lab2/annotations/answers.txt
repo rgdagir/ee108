@@ -1,0 +1,8 @@
+a. Kylee Krzanich, Raul Dagir, Sam Xu
+b. Nothing special.
+c. Our testing strategy consisted of trying all edge cases we could think of,
+in addition to some random normal cases, to validate and ensure the standard 
+funcionality of each module. (Any bugs we didnt catch?)
+d. We shift the number with smaller exponent right and add one to its exponent to make sure
+that we won't lose precision on the biggest number wile adding them up, as well as certifying
+that the smaller number won't be too small to the point where it won't affect the final result.

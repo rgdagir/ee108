@@ -1,0 +1,31 @@
+## This is the UCF file for Lab 0
+## Updated to use the Zedboard
+## Version 1.0 4/14/2015
+
+
+##-----------------------------------------------------------------
+## Switches on the Zedboard
+##-----------------------------------------------------------------
+NET "A<3>" LOC = "F21" | IOSTANDARD=LVCMOS18;
+NET "A<2>" LOC = "H22" | IOSTANDARD=LVCMOS18;
+NET "A<1>" LOC = "G22" | IOSTANDARD=LVCMOS18;
+NET "A<0>" LOC = "F22" | IOSTANDARD=LVCMOS18;
+NET "B<3>" LOC = "M15" | IOSTANDARD=LVCMOS18;
+NET "B<2>" LOC = "H17" | IOSTANDARD=LVCMOS18;
+NET "B<1>" LOC = "H18" | IOSTANDARD=LVCMOS18;
+NET "B<0>" LOC = "H19" | IOSTANDARD=LVCMOS18;
+
+##-----------------------------------------------------------------
+## Push buttons on the Zedboard
+##-----------------------------------------------------------------
+NET "left_pushbutton"  LOC = "N15" | IOSTANDARD=LVCMOS18;
+NET "right_pushbutton" LOC = "R18" | IOSTANDARD=LVCMOS18;
+
+#-----------------------------------------------------------------
+# LEDs on the Zedboard
+#-----------------------------------------------------------------
+NET "out<0>" LOC = "T22" | IOSTANDARD=LVCMOS33;
+NET "out<1>" LOC = "T21" | IOSTANDARD=LVCMOS33;
+NET "out<2>" LOC = "U22" | IOSTANDARD=LVCMOS33;
+NET "out<3>" LOC = "U21" | IOSTANDARD=LVCMOS33;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\groups\02\lab02\lab2_top.ncd
+OUTFILE=Z:\groups\02\lab02\lab2_top.bit
+FAMILY=Zynq
+PART=xc7z020-3clg484
+WORKINGDIR=Z:\groups\02\lab02
+LICENSE=WebPack
+USER_INFO=210913831_0_0_616

@@ -1,0 +1,296 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Feb 16 12:04:34 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "right_button" LOCATE = SITE "R18" LEVEL 1;
+COMP "leds_l<0>" LOCATE = SITE "T22" LEVEL 1;
+COMP "leds_l<3>" LOCATE = SITE "U21" LEVEL 1;
+COMP "leds_l<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "leds_l<1>" LOCATE = SITE "T21" LEVEL 1;
+COMP "up_button" LOCATE = SITE "T18" LEVEL 1;
+COMP "leds_r<0>" LOCATE = SITE "V22" LEVEL 1;
+COMP "leds_r<3>" LOCATE = SITE "U14" LEVEL 1;
+COMP "leds_r<2>" LOCATE = SITE "U19" LEVEL 1;
+COMP "leds_r<1>" LOCATE = SITE "W22" LEVEL 1;
+COMP "AC_MCLK" LOCATE = SITE "AB2" LEVEL 1;
+COMP "left_button" LOCATE = SITE "N15" LEVEL 1;
+COMP "clk" LOCATE = SITE "Y9" LEVEL 1;
+COMP "AC_ADR0" LOCATE = SITE "AB1" LEVEL 1;
+COMP "AC_ADR1" LOCATE = SITE "Y5" LEVEL 1;
+COMP "AC_GPIO0" LOCATE = SITE "Y8" LEVEL 1;
+COMP "AC_GPIO1" LOCATE = SITE "AA7" LEVEL 1;
+COMP "AC_GPIO2" LOCATE = SITE "AA6" LEVEL 1;
+COMP "AC_GPIO3" LOCATE = SITE "Y6" LEVEL 1;
+COMP "AC_SCK" LOCATE = SITE "AB4" LEVEL 1;
+COMP "AC_SDA" LOCATE = SITE "AB5" LEVEL 1;
+PIN adau1761_codec/codec_clock_gen/mmcm_adv_inst_pins<2> = BEL
+        "adau1761_codec/codec_clock_gen/mmcm_adv_inst" PINNAME CLKIN1;
+PIN
+        music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT_pins<32>
+        = BEL
+        "music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT"
+        PINNAME CLKARDCLK;
+PIN
+        music_player/song_reader_songy/Mram_addr[6]_memory[127][11]_wide_mux_1_OUT_pins<32>
+        = BEL
+        "music_player/song_reader_songy/Mram_addr[6]_memory[127][11]_wide_mux_1_OUT"
+        PINNAME CLKARDCLK;
+TIMEGRP clk_100 = BEL
+        "next_button_press_unit/one_pulse/last_value_storage/q_0" BEL
+        "play_button_press_unit/one_pulse/last_value_storage/q_0" BEL
+        "music_player/note_player/note_dff/q_5" BEL
+        "music_player/note_player/note_dff/q_4" BEL
+        "music_player/note_player/note_dff/q_3" BEL
+        "music_player/note_player/note_dff/q_2" BEL
+        "music_player/note_player/note_dff/q_1" BEL
+        "music_player/note_player/note_dff/q_0" BEL
+        "music_player/codec_conditioner/new_frame_state/q_0" BEL
+        "music_player/beat_generator/counter/q_0" BEL
+        "music_player/beat_generator/counter/q_1" BEL
+        "music_player/beat_generator/counter/q_2" BEL
+        "music_player/beat_generator/counter/q_3" BEL
+        "music_player/beat_generator/counter/q_4" BEL
+        "music_player/beat_generator/counter/q_5" BEL
+        "music_player/beat_generator/counter/q_6" BEL
+        "music_player/beat_generator/counter/q_7" BEL
+        "music_player/beat_generator/counter/q_8" BEL
+        "music_player/beat_generator/counter/q_9" PIN
+        "adau1761_codec/codec_clock_gen/mmcm_adv_inst_pins<2>" BEL
+        "play_button_press_unit/debounce/counter/q_19" BEL
+        "play_button_press_unit/debounce/counter/q_18" BEL
+        "play_button_press_unit/debounce/counter/q_17" BEL
+        "play_button_press_unit/debounce/counter/q_16" BEL
+        "play_button_press_unit/debounce/counter/q_15" BEL
+        "play_button_press_unit/debounce/counter/q_14" BEL
+        "play_button_press_unit/debounce/counter/q_13" BEL
+        "play_button_press_unit/debounce/counter/q_12" BEL
+        "play_button_press_unit/debounce/counter/q_11" BEL
+        "play_button_press_unit/debounce/counter/q_10" BEL
+        "play_button_press_unit/debounce/counter/q_9" BEL
+        "play_button_press_unit/debounce/counter/q_8" BEL
+        "play_button_press_unit/debounce/counter/q_7" BEL
+        "play_button_press_unit/debounce/counter/q_6" BEL
+        "play_button_press_unit/debounce/counter/q_5" BEL
+        "play_button_press_unit/debounce/counter/q_4" BEL
+        "play_button_press_unit/debounce/counter/q_3" BEL
+        "play_button_press_unit/debounce/counter/q_2" BEL
+        "play_button_press_unit/debounce/counter/q_1" BEL
+        "play_button_press_unit/debounce/counter/q_0" BEL
+        "play_button_press_unit/debounce/state/q_0" BEL
+        "play_button_press_unit/debounce/state/q_1" BEL
+        "next_button_press_unit/debounce/counter/q_19" BEL
+        "next_button_press_unit/debounce/counter/q_18" BEL
+        "next_button_press_unit/debounce/counter/q_17" BEL
+        "next_button_press_unit/debounce/counter/q_16" BEL
+        "next_button_press_unit/debounce/counter/q_15" BEL
+        "next_button_press_unit/debounce/counter/q_14" BEL
+        "next_button_press_unit/debounce/counter/q_13" BEL
+        "next_button_press_unit/debounce/counter/q_12" BEL
+        "next_button_press_unit/debounce/counter/q_11" BEL
+        "next_button_press_unit/debounce/counter/q_10" BEL
+        "next_button_press_unit/debounce/counter/q_9" BEL
+        "next_button_press_unit/debounce/counter/q_8" BEL
+        "next_button_press_unit/debounce/counter/q_7" BEL
+        "next_button_press_unit/debounce/counter/q_6" BEL
+        "next_button_press_unit/debounce/counter/q_5" BEL
+        "next_button_press_unit/debounce/counter/q_4" BEL
+        "next_button_press_unit/debounce/counter/q_3" BEL
+        "next_button_press_unit/debounce/counter/q_2" BEL
+        "next_button_press_unit/debounce/counter/q_1" BEL
+        "next_button_press_unit/debounce/counter/q_0" BEL
+        "next_button_press_unit/debounce/state/q_0" BEL
+        "next_button_press_unit/debounce/state/q_1" BEL
+        "music_player/mcu/play_flipflop/q_0" BEL
+        "music_player/mcu/song_flipflop/q_0" BEL
+        "music_player/mcu/song_flipflop/q_1" BEL
+        "music_player/song_reader/state_flipflop/q_4" BEL
+        "music_player/song_reader/state_flipflop/q_3" BEL
+        "music_player/song_reader/state_flipflop/q_2" BEL
+        "music_player/song_reader/state_flipflop/q_1" BEL
+        "music_player/song_reader/state_flipflop/q_0" BEL
+        "music_player/song_reader/rom_flipflop/q_0" BEL
+        "music_player/song_reader/rom_flipflop/q_1" BEL
+        "music_player/song_reader/rom_flipflop/q_2" BEL
+        "music_player/note_player/freak/dout_18" BEL
+        "music_player/note_player/freak/dout_17" BEL
+        "music_player/note_player/freak/dout_16" BEL
+        "music_player/note_player/freak/dout_15" BEL
+        "music_player/note_player/freak/dout_14" BEL
+        "music_player/note_player/freak/dout_13" BEL
+        "music_player/note_player/freak/dout_12" BEL
+        "music_player/note_player/freak/dout_11" BEL
+        "music_player/note_player/freak/dout_10" BEL
+        "music_player/note_player/freak/dout_9" BEL
+        "music_player/note_player/freak/dout_8" BEL
+        "music_player/note_player/freak/dout_7" BEL
+        "music_player/note_player/freak/dout_6" BEL
+        "music_player/note_player/freak/dout_5" BEL
+        "music_player/note_player/freak/dout_4" BEL
+        "music_player/note_player/freak/dout_3" BEL
+        "music_player/note_player/freak/dout_2" BEL
+        "music_player/note_player/freak/dout_1" BEL
+        "music_player/note_player/freak/dout_0" BEL
+        "music_player/note_player/sin_read/counter/q_0" BEL
+        "music_player/note_player/sin_read/counter/q_1" BEL
+        "music_player/note_player/sin_read/sign_flipflop/q_0" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_21" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_20" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_19" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_18" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_17" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_16" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_15" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_14" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_13" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_12" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_11" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_10" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_9" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_8" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_7" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_6" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_5" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_4" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_3" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_2" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_1" BEL
+        "music_player/note_player/sin_read/rom_flipflop/q_0" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_15" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_14" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_13" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_12" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_11" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_10" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_9" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_8" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_7" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_6" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_5" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_4" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_3" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_2" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_1" BEL
+        "music_player/codec_conditioner/next_sample_latch/q_0" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_15" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_14" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_13" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_12" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_11" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_10" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_9" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_8" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_7" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_6" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_5" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_4" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_3" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_2" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_1" BEL
+        "music_player/codec_conditioner/current_sample_latch/q_0" BEL
+        "music_player/note_player/counter_ff/q_0" BEL
+        "music_player/note_player/counter_ff/q_1" BEL
+        "music_player/note_player/counter_ff/q_6" BEL
+        "music_player/note_player/counter_ff/q_2" BEL
+        "music_player/note_player/counter_ff/q_3" BEL
+        "music_player/note_player/counter_ff/q_4" BEL
+        "music_player/note_player/counter_ff/q_5" BEL "clk_IBUF_BUFG" BEL
+        "next_button_press_unit/sync/ff3/Mshreg_q_0" BEL
+        "next_button_press_unit/sync/ff3/q_0" BEL
+        "play_button_press_unit/sync/ff3/Mshreg_q_0" BEL
+        "play_button_press_unit/sync/ff3/q_0" PIN
+        "music_player/note_player/sin_read_s_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT_pins<32>"
+        PIN
+        "music_player/song_reader_songy/Mram_addr[6]_memory[127][11]_wide_mux_1_OUT_pins<32>";
+PIN
+        adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373_pins<32>
+        = BEL
+        "adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373"
+        PINNAME CLKARDCLK;
+TIMEGRP adau1761_codec_codec_clock_gen_clkout0 = BEL
+        "adau1761_codec/i2c_interface/i_ADAU1761_interface/master_clk" BEL
+        "adau1761_codec/codec_clock_gen/clkout1_buf" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_d_out" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_63" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_62" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_61" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_60" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_59" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_58" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_57" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_56" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_55" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_54" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_53" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_52" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_51" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_50" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_49" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_48" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_last" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/bclk_delay_0"
+        BEL "adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample"
+        BEL "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd2"
+        BEL "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd3"
+        BEL "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd1"
+        BEL "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_scl" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_sda_t" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_6" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_5" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_4" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_3" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_2" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_1" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/bitcount_0" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_9" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_8" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_7" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_6" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_5" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_4" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_3" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_2" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_1" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/pcnext_0" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_started" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_8" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_7" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_6" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_5" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_4" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_3" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_2" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_1" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_data_0" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_bits_left_3" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_bits_left_2" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_bits_left_1" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/i2c_bits_left_0" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_15" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_14" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_13" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_12" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_11" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_10" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_9" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_8" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_7" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_6" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_5" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_4" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_3" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_2" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_1" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/delay_0" BEL
+        "adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/ack_flag" BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/Mshreg_bclk_delay_1"
+        BEL
+        "adau1761_codec/i2c_interface/Inst_i2s_data_interface/bclk_delay_1"
+        PIN
+        "adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373_pins<32>";
+TS_clk = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
+TS_adau1761_codec_codec_clock_gen_clkout0 = PERIOD TIMEGRP
+        "adau1761_codec_codec_clock_gen_clkout0" TS_clk / 0.48 HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,35 @@
+##-----------------------------------------------------------------
+## Clock
+##-----------------------------------------------------------------
+#NET "clk" LOC = "AH15";
+#NET "clk" IOSTANDARD = LVTTL;
+#NET "clk" TNM_NET = "clk";
+#TIMESPEC "TS_clock" = PERIOD "clk" 10 ns HIGH 50 %;
+
+NET CLK       LOC = Y9   | IOSTANDARD=LVCMOS33;
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clock = PERIOD "clk" 10 ns HIGH 50%;
+
+
+##-----------------------------------------------------------------
+## Push buttons on the Zedboard
+##-----------------------------------------------------------------
+NET "left_button"  LOC = "N15" | IOSTANDARD=LVCMOS18;
+NET "right_button" LOC = "R18" | IOSTANDARD=LVCMOS18;
+NET "down_button" LOC = "R16" | IOSTANDARD=LVCMOS18; # "BTND"
+NET "up_button" LOC = "T18" | IOSTANDARD=LVCMOS18; # "BTNU"
+#NET "center_button"[4] LOC = "P16" | IOSTANDARD=LVCMOS18; # "BTNC"
+
+
+#-----------------------------------------------------------------
+# LEDs on the Zedboard
+#-----------------------------------------------------------------
+NET "leds<0>" LOC = "T22" | IOSTANDARD=LVCMOS33;
+NET "leds<1>" LOC = "T21" | IOSTANDARD=LVCMOS33;
+NET "leds<2>" LOC = "U22" | IOSTANDARD=LVCMOS33;
+NET "leds<3>" LOC = "U21" | IOSTANDARD=LVCMOS33;
+NET "leds<4>" LOC = "V22" | IOSTANDARD = LVCMOS33;
+NET "leds<5>" LOC = "W22" | IOSTANDARD = LVCMOS33;
+NET "leds<6>" LOC = "U19" | IOSTANDARD = LVCMOS33;
+NET "leds<7>" LOC = "U14" | IOSTANDARD = LVCMOS33;
+

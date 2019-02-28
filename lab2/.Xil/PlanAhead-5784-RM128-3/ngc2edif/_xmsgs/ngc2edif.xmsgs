@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="298" delta="new" >No output is written to <arg fmt="%s" index="1">lab2_top.xncf</arg>, ignored.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">crblah_q</arg><arg fmt="%s" index="2">&lt;20 : 10&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmult_PWR_1_o_g[7]_MuLt_6_OUT_Madd2_lut</arg><arg fmt="%s" index="2">&lt;11 : 5&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Maddsub_PWR_1_o_r[7]_MuLt_8_OUT_Madd4_lut</arg><arg fmt="%s" index="2">&lt;11 : 6&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmult_PWR_1_o_g[7]_MuLt_12_OUT_Madd3_lut</arg><arg fmt="%s" index="2">&lt;14 : 1&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Maddsub_PWR_1_o_r[7]_MuLt_8_OUT_Madd5_lut</arg><arg fmt="%s" index="2">&lt;13 : 1&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Maddsub_PWR_1_o_b[7]_MuLt_5_OUT_Madd_lut</arg><arg fmt="%s" index="2">&lt;13 : 0&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">fpa/addr/Madd_n0006_cy</arg><arg fmt="%s" index="2">&lt;4 : 2&gt;</arg> on block <arg fmt="%s" index="3">lab2_top</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+</messages>
+
